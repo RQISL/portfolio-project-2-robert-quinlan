@@ -1,12 +1,26 @@
+
+
 const options = {
     method: 'GET',
     headers: {
         'X-RapidAPI-Key': '8155640071msh82e17e6cc71dfcep12441bjsna2ec5fe1f5c1',
-        'X-RapidAPI-Host': 'online-movie-database.p.rapidapi.com'
+        'X-RapidAPI-Host': 'imdb-top-100-movies.p.rapidapi.com'
     }
 };
 
-fetch('https://online-movie-database.p.rapidapi.com/auto-complete?q=die%20hard', options)
+fetch('https://imdb-top-100-movies.p.rapidapi.com/', options)
     .then(response => response.json())
-    .then(response => console.log(response))
+
+    .then(image => {
+        const list = image;
+
+        list.map(item => {
+            const poster = item.image;
+            const movie = `<img src="${poster}">`;
+            document.querySelector('.movies').innerHTML += movie;
+            console.log(item);
+
+        })
+
+    })
     .catch(err => console.error(err));
