@@ -1,0 +1,12 @@
+body {
+    background-color: blueviolet;
+}
+
+.movies {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.movies img {
+    padding-right: 10px;
+}
