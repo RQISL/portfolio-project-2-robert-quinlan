@@ -2,11 +2,20 @@ body {
     background-color: blueviolet;
 }
 
+#wrapperBox {
+    width: 900px;
+    height: 600px;
+    background-color: azure;
+    margin: 100px auto;
+
+}
+
 .movies {
     display: flex;
     flex-wrap: wrap;
 }
 
 .movies img {
-    padding-right: 10px;
+    width: 30%;
+    margin: 50px auto;
 }
