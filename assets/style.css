@@ -5,7 +5,7 @@ body {
 /* display the box inside quiz for a poster slide */
 #wrapperBox {
     width: 900px;
-    height: 600px;
+    height: fit-content;
     background-color: azure;
     margin: 100px auto;
 
@@ -20,7 +20,6 @@ body {
 #movies img {
     width: 30%;
     margin: 50px auto;
-    border: solid red 2px;
 }
 
 /* button prev and next */
@@ -44,4 +43,12 @@ body {
     color: aliceblue;
     padding: 10px;
     font-size: 1.5em;
+}
+
+.texts {
+    font-size: 1.5em;
+    background-color: blue;
+    color: aliceblue;
+    text-align: center;
+    margin-bottom: 5px;
 }
