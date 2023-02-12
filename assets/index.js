@@ -1,5 +1,4 @@
-
-
+// Rapid Api key
 const options = {
     method: 'GET',
     headers: {
@@ -8,58 +7,39 @@ const options = {
     }
 };
 
-// fetch('https://imdb-top-100-movies.p.rapidapi.com/', options)
-//     .then(response => response.json())
-
-//     .then(image => {
-//         const list = image;
-
-//         list.map(item => {
-//             const poster = item.image;
-//             const movie = `<img src="${poster}">`;
-//             document.querySelector('.movies').innerHTML += movie;
-//             console.log(image);
-
-//         })
-//     })
-//     .catch(err =>
-//         console.error(err));
-
+// from Api collect poster of images in the array
 let arrayOfImages = [];
-let i = 0;
-
-arrayOfImages.push([
-    'https://m.media-amazon.com/images/M/MV5BMDFkYTc0MGEtZmNhMC00ZDIzLWFmNTEtODM1ZmRlYWMwMWFmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_QL75_UX380_CR0,1,380,562_.jpg',
+arrayOfImages.push(
     'https://m.media-amazon.com/images/M/MV5BM2MyNjYxNmUtYTAwNi00MTYxLWJmNWYtYzZlODY3ZTk3OTFlXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_QL75_UY562_CR8,0,380,562_.jpg',
     'https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_QL75_UX380_CR0,0,380,562_.jpg',
-    'https://m.media-amazon.com/images/M/MV5BOTUwODM5MTctZjczMi00OTk4LTg3NWUtNmVhMTAzNTNjYjcyXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_QL75_UX380_CR0,16,380,562_.jpg'
-]);
+    'https://m.media-amazon.com/images/M/MV5BOTUwODM5MTctZjczMi00OTk4LTg3NWUtNmVhMTAzNTNjYjcyXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_QL75_UX380_CR0,16,380,562_.jpg',
+);
+const firstImg = 0;
+const lastImg = arrayOfImages.length - 1;
+let currentImg = 0;
+const poster = document.getElementsByClassName('poster')[0]
 
-// function poster() {
-//     for (let i = 0; i < arrayOfImages.length; i++) {
-
-//     }
-//     // return movie;
-// }
-const movie = `<img src="${arrayOfImages}">`;
-document.querySelector('.movies').innerHTML = movie;
-console.log(movie);
-
-function prev() {
-    i <= arrayOfImages.length; i--;
-    return img();
-}
-console.log(arrayOfImages);
-
-function next() {
-    i >= arrayOfImages.length; i++;
-    return img();
-}
-
-function img() {
-    if (i >= arrayOfImages) {
-        movie[i]++;
+// declared variable for the button click to next slide
+const nextBtn = document.getElementById('btnNext');
+nextBtn.addEventListener('click', () => {
+    currentImg++;
+    if (currentImg >= lastImg) {
+        currentImg = lastImg;
+        currentImg = 2; 
     }
+    poster.src = arrayOfImages[currentImg];
+    document.getElementById('numberCounter').innerHTML = (currentImg + 1) + '/3';
+});
 
-}
-console.log(arrayOfImages[i]);
+// declared variable for the button click to previous slide
+const prevBtn = document.getElementById('btnPrev');
+prevBtn.addEventListener('click', () => {
+    currentImg--;
+    if (currentImg <= firstImg) {
+        currentImg = firstImg;
+        currentImg = 0;
+    }
+    poster.src = arrayOfImages[currentImg];
+    document.getElementById('numberCounter').innerHTML = (currentImg + 1) + '/3';
+});
+
