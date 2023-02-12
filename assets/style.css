@@ -12,26 +12,31 @@ body {
 }
 
 /* output image of poster */
-.movies {
+#movies {
     display: flex;
     flex-wrap: wrap;
 }
 
-.movies img {
+#movies img {
     width: 30%;
     margin: 50px auto;
+    border: solid red 2px;
 }
 
 /* button prev and next */
-.btn-prev {
-    border: none;
-    outline: none;
-    background-color: dimgrey;
-    color: aliceblue;
-    padding: 10px;
-    font-size: 1.5em;
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
+#numberCounter {
+    color: blue;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.btn-prev,
 .btn-next {
     border: none;
     outline: none;
