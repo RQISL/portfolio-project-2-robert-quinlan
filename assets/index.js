@@ -19,27 +19,28 @@ arrayOfImages.push(
 let myQuestion = [];
 myQuestion.push(
 
-    `<span>Who is the actor in this moive?</span><br>
-   <span>Bruce Wills</span><br>
-   <span>Jim Carey</span><br>
-   <span>Kevin Coster</span>`,
+    `<p class="box" style="background-color: brown;">Who is the actor in this moive?</p>
+     <p class="box" style="background-color: blue;">Bruce Wills</p>
+     <p class="box" style="background-color: blue;">Jim Carey</p>
+     <p class="box" style="background-color: blue;">Kevin Coster</p>`,
 
-    `<span>Who is the director in this moive?</span><br>
-   <span>Mel Gibson</span><br>
-   <span>James Carden</span><br>
-   <span>Kevin Coster</span>`,
+    `<p class="box" style="background-color: brown;">Who is the director in this moive?</p>
+     <p class="box" style="background-color: blue;">Mel Gibson</p>
+     <p class="box" style="background-color: blue;">James Carden</p>
+     <p class="box" style="background-color: blue;">Kevin Coster</p>`,
 
-    `<span>When was make this film?</span><br>
-   <span>1988</span><br>
-   <span>1997</span><br>
-   <span>2003</span>`,
+    `<p class="box" style="background-color: brown;">When was make this film?</p>
+     <p class="box" style="background-color: blue;">1988</p>
+     <p class="box" style="background-color: blue;">1997</p>
+     <p class="box" style="background-color: blue;">2003</p>`,
 
-    `<span>When was make this film?</span><br>
-   <span>1988</span><br>
-   <span>1997</span><br>
-   <span>2003</span>`,
+    `<p class="box" style="background-color: brown;">When was make this film?</p>
+     <p class="box" style="background-color: blue;">1988</p>
+     <p class="box" style="background-color: blue;">1997</p>
+     <p class="box" style="background-color: blue;">2003</p>`,
 );
 
+// declare variable for the function
 const firstImg = 0;
 const lastImg = arrayOfImages.length - 1;
 let currentImg = 0;
@@ -57,6 +58,32 @@ nextBtn.addEventListener('click', () => {
     poster.src = arrayOfImages[currentImg];
     document.getElementById('numberCounter').innerHTML = (currentImg + 1) + '/4';
     questions = document.getElementById('questions').innerHTML = myQuestion[currentImg];
+
+    // click highlight color
+    function boxClicked(event) {
+        event.preventDefault();
+
+        let colorBox = document.getElementsByClassName('box');
+
+        if (this.style.backgroundColor === "blue") {
+            this.style.backgroundColor = "red";
+            console.log('red');
+        }
+        else if (this.style.backgroundColor === "red") {
+            this.style.backgroundColor = "blue";
+            console.log('blue');
+        }
+
+    }
+
+    let box = document.getElementsByClassName('box');
+
+    for (let i = 0; i < box.length; i++) {
+
+        box[i].addEventListener('click', boxClicked);
+
+        //console.log('clicked');
+    }
 });
 
 // declared variable for the button click to previous slide
@@ -71,8 +98,60 @@ prevBtn.addEventListener('click', () => {
     document.getElementById('numberCounter').innerHTML = (currentImg + 1) + '/4';
     questions = document.getElementById('questions').innerHTML = myQuestion[currentImg];
 
+    // click highlight color 
+    function boxClicked(event) {
+        event.preventDefault();
+
+        let colorBox = document.getElementsByClassName('box');
+
+        if (this.style.backgroundColor === "blue") {
+            this.style.backgroundColor = "red";
+            console.log('red');
+        }
+        else if (this.style.backgroundColor === "red") {
+            this.style.backgroundColor = "blue";
+            console.log('blue');
+        }
+
+    }
+
+    let box = document.getElementsByClassName('box');
+
+    for (let i = 0; i < box.length; i++) {
+
+        box[i].addEventListener('click', boxClicked);
+
+        //console.log('clicked');
+    }
 });
-console.log(questions, 'Text');
+// click highlight color 
+function boxClicked(event) {
+    event.preventDefault();
+
+    let colorBox = document.getElementsByClassName('box');
+
+    if (this.style.backgroundColor === "blue") {
+        this.style.backgroundColor = "red";
+        console.log('red');
+    }
+    else if (this.style.backgroundColor === "red") {
+        this.style.backgroundColor = "blue";
+        console.log('blue');
+    }
+
+}
+
+let box = document.getElementsByClassName('box');
+
+for (let i = 0; i < box.length; i++) {
+
+    box[i].addEventListener('click', boxClicked);
+
+    //console.log('clicked');
+}
 
 
-console.log(myQuestion)
+
+
+//console.log(questions, 'Text');
+//console.log(myQuestion)
