@@ -16,6 +16,7 @@ arrayOfImages.push(
     'https://m.media-amazon.com/images/M/MV5BOTUwODM5MTctZjczMi00OTk4LTg3NWUtNmVhMTAzNTNjYjcyXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_QL75_UX380_CR0,16,380,562_.jpg',
 );
 
+// the questions and answers in array.
 let myQuestion = [];
 myQuestion.push(
 
@@ -60,9 +61,8 @@ nextBtn.addEventListener('click', () => {
     questions = document.getElementById('questions').innerHTML = myQuestion[currentImg];
 
     // click highlight color
-    function boxClicked(event) {
+    function selectAnswer(event) {
         event.preventDefault();
-
         let colorBox = document.getElementsByClassName('box');
 
         if (this.style.backgroundColor === "blue") {
@@ -74,15 +74,14 @@ nextBtn.addEventListener('click', () => {
             console.log('blue');
         }
 
-    }
+        let box = document.getElementsByClassName('box');
 
-    let box = document.getElementsByClassName('box');
+        for (let i = 0; i < box.length; i++) {
 
-    for (let i = 0; i < box.length; i++) {
+            box[i].addEventListener('click', selectAnswer);
 
-        box[i].addEventListener('click', boxClicked);
-
-        //console.log('clicked');
+            //console.log('clicked');
+        }
     }
 });
 
@@ -99,9 +98,7 @@ prevBtn.addEventListener('click', () => {
     questions = document.getElementById('questions').innerHTML = myQuestion[currentImg];
 
     // click highlight color 
-    function boxClicked(event) {
-        event.preventDefault();
-
+    function selectAnswer(event) {
         let colorBox = document.getElementsByClassName('box');
 
         if (this.style.backgroundColor === "blue") {
@@ -113,21 +110,19 @@ prevBtn.addEventListener('click', () => {
             console.log('blue');
         }
 
-    }
+        let box = document.getElementsByClassName('box');
 
-    let box = document.getElementsByClassName('box');
+        for (let i = 0; i < box.length; i++) {
 
-    for (let i = 0; i < box.length; i++) {
+            box[i].addEventListener('click', selectAnswer);
 
-        box[i].addEventListener('click', boxClicked);
-
-        //console.log('clicked');
+            //console.log('clicked');
+        }
     }
 });
 // click highlight color 
-function boxClicked(event) {
+function selectAnswer(event) {
     event.preventDefault();
-
     let colorBox = document.getElementsByClassName('box');
 
     if (this.style.backgroundColor === "blue") {
@@ -138,20 +133,18 @@ function boxClicked(event) {
         this.style.backgroundColor = "blue";
         console.log('blue');
     }
+    console.log(colorBox, "it is click working")
+    let box = document.getElementsByClassName('box');
 
+    for (let i = 0; i < box.length; i++) {
+
+        box[i].addEventListener('click', selectAnswer);
+
+        //console.log('clicked');
+    }
 }
-
-let box = document.getElementsByClassName('box');
-
-for (let i = 0; i < box.length; i++) {
-
-    box[i].addEventListener('click', boxClicked);
-
-    //console.log('clicked');
-}
-
-
-
-
 //console.log(questions, 'Text');
 //console.log(myQuestion)
+
+let display = localStorage.getItem(displayName);
+display.style.display = 'block';
