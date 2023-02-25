@@ -1,3 +1,15 @@
+
+function entergame() {
+    let username = document.querySelector('#username').value;
+    let displayname = document.querySelector('#displayName');
+
+    displayname.innerHTML = "Welcome " + username + " to Movie Quiz";
+
+    console.log(displayname, "got name");
+}
+
+
+
 // Rapid Api key
 const options = {
     method: 'GET',
@@ -73,15 +85,14 @@ nextBtn.addEventListener('click', () => {
             this.style.backgroundColor = "blue";
             console.log('blue');
         }
+    }
+    let box = document.getElementsByClassName('box');
 
-        let box = document.getElementsByClassName('box');
+    for (let i = 0; i < box.length; i++) {
 
-        for (let i = 0; i < box.length; i++) {
+        box[i].addEventListener('click', selectAnswer);
 
-            box[i].addEventListener('click', selectAnswer);
-
-            //console.log('clicked');
-        }
+        //console.log('clicked');
     }
 });
 
@@ -109,15 +120,14 @@ prevBtn.addEventListener('click', () => {
             this.style.backgroundColor = "blue";
             console.log('blue');
         }
+    }
+    let box = document.getElementsByClassName('box');
 
-        let box = document.getElementsByClassName('box');
+    for (let i = 0; i < box.length; i++) {
 
-        for (let i = 0; i < box.length; i++) {
+        box[i].addEventListener('click', selectAnswer);
 
-            box[i].addEventListener('click', selectAnswer);
-
-            //console.log('clicked');
-        }
+        //console.log('clicked');
     }
 });
 // click highlight color 
@@ -134,17 +144,17 @@ function selectAnswer(event) {
         console.log('blue');
     }
     console.log(colorBox, "it is click working")
-    let box = document.getElementsByClassName('box');
-
-    for (let i = 0; i < box.length; i++) {
-
-        box[i].addEventListener('click', selectAnswer);
-
-        //console.log('clicked');
-    }
 }
+
+let box = document.getElementsByClassName('box');
+
+for (let i = 0; i < box.length; i++) {
+
+    box[i].addEventListener('click', selectAnswer);
+
+    //console.log('clicked');
+}
+
 //console.log(questions, 'Text');
 //console.log(myQuestion)
 
-let display = localStorage.getItem(displayName);
-display.style.display = 'block';
