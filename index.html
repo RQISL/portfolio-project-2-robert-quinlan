@@ -6,13 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="assets/style.css" rel="stylesheet">
+
     <title>Movies Quiz</title>
 </head>
 
 <body>
-    <label for="username" id="textHead">Enter your name</label>
-    <input type="text" id="username" name="username" placeholder="Enter your name">
-    <button id="enterUsername" class="btn" type="submit" onclick="entergame()">Let Play Movie Quiz</button>
+    <div id="hidden">
+        <label for="username" id="textHead">Enter your name</label>
+        <input type="text" id="username" name="username" placeholder="Enter your name">
+        <button id="enterUsername" class="btn" type="submit" onclick="entergame()">Let Play Movie Quiz</button>
+    </div>
     <div id="wrapperBox">
         <h3 id="displayName"> </h3>
         <div id="movies"><img class="poster"
@@ -37,10 +40,17 @@
     <!-- closed wrapperBox -->
     <div id="resutls"></div>
     <div id="timeUp"></div>
-
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+         $(document).ready(function () {
+                $(".btn").click(function () {
+                    $('#displayName').fadeIn(16000);
+                });
+            });
+    </script>
     <!-- external Javascript file -->
     <script src="assets/index.js"></script>
+
 </body>
 
 </html>
