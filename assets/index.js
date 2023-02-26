@@ -5,7 +5,9 @@ function entergame() {
 
     displayname.innerHTML = "Welcome " + username + " to Movie Quiz";
 
-    console.log(displayname, "got name");
+    document.getElementById("hidden").style.visibility = "hidden";
+
+
 }
 
 
