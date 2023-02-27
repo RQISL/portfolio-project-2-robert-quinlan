@@ -1,16 +1,19 @@
+// Enter username its disable unless user must fill enter the name.
+let username = document.querySelector('#username');
+let UserName = document.querySelector('#enterUsername');
 
+username.addEventListener('keyup', () => {
+    UserName.disabled = !username.value;
+});
+
+//  Output username on the screen after enter username and disappear the screen of enter username. 
 function entergame() {
-    let username = document.querySelector('#username').value;
     let displayname = document.querySelector('#displayName');
-
-    displayname.innerHTML = "Welcome " + username + " to Movie Quiz";
-
+    let username = document.querySelector('#username').value;
+    displayname.innerHTML = `<span>Welcome</span> <span id="colorName"> ` + username + ` </span><span>Movie Quiz</span>`;
     document.getElementById("hidden").style.visibility = "hidden";
-
-
+    username = document.getElementById('username').style.color = "blue";
 }
-
-
 
 // Rapid Api key
 const options = {
@@ -62,17 +65,27 @@ let currentImg = 0;
 let poster = document.getElementsByClassName('poster')[0]
 let questions = 0;
 
-// declared variable for the button click to next slide
+// declared variable for the button click next the slides
 const nextBtn = document.getElementById('btnNext');
 nextBtn.addEventListener('click', () => {
     currentImg++;
     if (currentImg >= lastImg) {
         currentImg = lastImg;
         currentImg = 3;
+        document.getElementById('results').style.visibility = "visible";
     }
+    // else if (currentImg === 3) {
+    //     endofAnswers = false;
+    // }
+
     poster.src = arrayOfImages[currentImg];
     document.getElementById('numberCounter').innerHTML = (currentImg + 1) + '/4';
     questions = document.getElementById('questions').innerHTML = myQuestion[currentImg];
+
+
+    // nextBtn.addEventListener('click', () => {
+
+    // })
 
     // click highlight color
     function selectAnswer(event) {
@@ -98,41 +111,6 @@ nextBtn.addEventListener('click', () => {
     }
 });
 
-// declared variable for the button click to previous slide
-const prevBtn = document.getElementById('btnPrev');
-prevBtn.addEventListener('click', () => {
-    currentImg--;
-    if (currentImg <= firstImg) {
-        currentImg = firstImg;
-        currentImg = 0;
-    }
-    poster.src = arrayOfImages[currentImg];
-    document.getElementById('numberCounter').innerHTML = (currentImg + 1) + '/4';
-    questions = document.getElementById('questions').innerHTML = myQuestion[currentImg];
-
-    // click highlight color 
-    function selectAnswer(event) {
-        let colorBox = document.getElementsByClassName('box');
-
-        if (this.style.backgroundColor === "blue") {
-            this.style.backgroundColor = "red";
-            console.log('red');
-        }
-        else if (this.style.backgroundColor === "red") {
-            this.style.backgroundColor = "blue";
-            console.log('blue');
-        }
-    }
-    let box = document.getElementsByClassName('box');
-
-    for (let i = 0; i < box.length; i++) {
-
-        box[i].addEventListener('click', selectAnswer);
-
-        //console.log('clicked');
-    }
-});
-// click highlight color 
 function selectAnswer(event) {
     event.preventDefault();
     let colorBox = document.getElementsByClassName('box');
@@ -145,9 +123,7 @@ function selectAnswer(event) {
         this.style.backgroundColor = "blue";
         console.log('blue');
     }
-    console.log(colorBox, "it is click working")
 }
-
 let box = document.getElementsByClassName('box');
 
 for (let i = 0; i < box.length; i++) {
@@ -156,7 +132,3 @@ for (let i = 0; i < box.length; i++) {
 
     //console.log('clicked');
 }
-
-//console.log(questions, 'Text');
-//console.log(myQuestion)
-
