@@ -11,11 +11,18 @@
 </head>
 
 <body>
+    <div id="results">Your answers are:</div>
     <div id="hidden">
-        <label for="username" id="textHead">Enter your name</label>
-        <input type="text" id="username" name="username" placeholder="Enter your name">
-        <button id="enterUsername" class="btn" type="submit" onclick="entergame()">Let Play Movie Quiz</button>
+        <div id="EnterBox">
+            <label for="username" id="textHead">Enter your name</label>
+            <input type="text" id="username" name="username" placeholder="Enter your name">
+            <button id="enterUsername" class="btn" type="submit" onclick="entergame()" disabled>Let Play Movie
+                Quiz</button>
+        </div>
+        <!-- closed EnterBox -->
     </div>
+    <!-- closed hidden -->
+
     <div id="wrapperBox">
         <h3 id="displayName"> </h3>
         <div id="movies"><img class="poster"
@@ -30,23 +37,22 @@
         <!-- closed question -->
 
         <div class="buttons">
-            <button class="btn-prev" id="btnPrev">Previous</button>
-            <p id="numberCounter">1/4</p>
             <button class="btn-next" id="btnNext">Next</button>
+            <p id="numberCounter">1/4</p>
         </div>
         <!-- closed buttons -->
         <div class="mutli-answers"></div>
     </div>
     <!-- closed wrapperBox -->
-    <div id="resutls"></div>
+
     <div id="timeUp"></div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script>
-         $(document).ready(function () {
-                $(".btn").click(function () {
-                    $('#displayName').fadeIn(16000);
-                });
+        $(document).ready(function () {
+            $(".btn").click(function () {
+                $('#displayName').fadeIn(16000);
             });
+        });
     </script>
     <!-- external Javascript file -->
     <script src="assets/index.js"></script>
