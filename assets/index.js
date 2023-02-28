@@ -10,7 +10,7 @@ username.addEventListener('keyup', () => {
 function entergame() {
     let displayname = document.querySelector('#displayName');
     let username = document.querySelector('#username').value;
-    displayname.innerHTML = `<span>Welcome</span> <span id="colorName"> ` + username + ` </span><span>Movie Quiz</span>`;
+    displayname.innerHTML = `<span>Welcome</span> <span id="colorName"> ` + username + ` </span><p>Movie Quiz</p>`;
     document.getElementById("hidden").style.visibility = "hidden";
     username = document.getElementById('username').style.color = "blue";
 }
@@ -38,52 +38,47 @@ let myQuestion = [];
 myQuestion.push(
 
     `<p class="box" style="background-color: brown;">Who is the actor in this moive?</p>
-     <p class="box" style="background-color: blue;">Bruce Wills</p>
-     <p class="box" style="background-color: blue;">Jim Carey</p>
-     <p class="box" style="background-color: blue;">Kevin Coster</p>`,
+     <p class="box incorrectAns" style="background-color: blue;">Bruce Wills</p>
+     <p class="box correctAns" style="background-color: blue;">Jim Carey</p>
+     <p class="box incorrectAns" style="background-color: blue;">Kevin Coster</p>`,
 
     `<p class="box" style="background-color: brown;">Who is the director in this moive?</p>
-     <p class="box" style="background-color: blue;">Mel Gibson</p>
-     <p class="box" style="background-color: blue;">James Carden</p>
-     <p class="box" style="background-color: blue;">Kevin Coster</p>`,
+     <p class="box incorrectAns" style="background-color: blue;">Mel Gibson</p>
+     <p class="box incorrectAns" style="background-color: blue;">James Carden</p>
+     <p class="box correctAns" style="background-color: blue;">Kevin Coster</p>`,
 
     `<p class="box" style="background-color: brown;">When was make this film?</p>
-     <p class="box" style="background-color: blue;">1988</p>
-     <p class="box" style="background-color: blue;">1997</p>
-     <p class="box" style="background-color: blue;">2003</p>`,
+     <p class="box corectAns" style="background-color: blue;">1988</p>
+     <p class="box incorrectAns" style="background-color: blue;">1997</p>
+     <p class="box incorrectAns" style="background-color: blue;">2003</p>`,
 
     `<p class="box" style="background-color: brown;">When was make this film?</p>
-     <p class="box" style="background-color: blue;">1988</p>
-     <p class="box" style="background-color: blue;">1997</p>
-     <p class="box" style="background-color: blue;">2003</p>`,
+     <p class="box incorrectAns" style="background-color: blue;">1988</p>
+     <p class="box incorrectAns" style="background-color: blue;">1997</p>
+     <p class="box correctAns" style="background-color: blue;">2003</p>`,
 );
 
 // declare variable for the function
 const firstImg = 0;
-const lastImg = arrayOfImages.length - 1;
+const lastImg = arrayOfImages.length;
 let currentImg = 0;
-let poster = document.getElementsByClassName('poster')[0]
+let poster = document.getElementsByClassName('poster')[0];
 let questions = 0;
 
 // declared variable for the button click next the slides
 const nextBtn = document.getElementById('btnNext');
-let popAnswers = document.getElementById('results');
+let plusAnswer = document.getElementById('results');
 nextBtn.addEventListener('click', () => {
     currentImg++;
     if (currentImg >= lastImg) {
         currentImg = lastImg;
-        currentImg = 3;
-        popAnswers = document.getElementById('results').style.visibility = "visible";
+        plusAnswer = lastImg;
+        plusAnswer = document.getElementById('results').style.visibility = "visible";
     }
-    else if (popAnswers >= lastImg) {
-
-        popAnswers = 4;
-    }
-
     poster.src = arrayOfImages[currentImg];
     document.getElementById('numberCounter').innerHTML = (currentImg + 1) + '/4';
     questions = document.getElementById('questions').innerHTML = myQuestion[currentImg];
-
+    return questions;
 
     function selectAnswer(event) {
         event.preventDefault();
@@ -93,29 +88,16 @@ nextBtn.addEventListener('click', () => {
             this.style.backgroundColor = "red";
             console.log('red');
         }
-        else if (colorBox.style.backgroundColor === "red") {
-            colorBox.style.backgroundColor = "blue";
+        else if (this.style.backgroundColor === "red") {
+            this.style.backgroundColor = "blue";
             console.log('blue');
         }
     }
-    let box = document.getElementsByClassName('box');
-    let choiceAnswer = myQuestion;
 
+    let box = document.getElementsByClassName('box');
     for (let i = 0; i < box.length; i++) {
         box[i].addEventListener('click', selectAnswer);
-        if (myQuestion === [1]) {
-            choiceAnswer.innerHTML = document.getElementById('answers');
-        }
-        else if (myQuestion === [2]) {
-            choiceAnswer.innerHTML = document.getElementById('answers');
-        }
-        else if (myQuestion === [3]) {
-            choiceAnswer.innerHTML = document.getElementById('answers');
-        }
-
-        console.log(choiceAnswer, 'clicked');
     }
-
 });
 
 function selectAnswer(event) {
@@ -126,25 +108,32 @@ function selectAnswer(event) {
         this.style.backgroundColor = "red";
         console.log('red');
     }
-    else if (colorBox.style.backgroundColor === "red") {
-        colorBox.style.backgroundColor = "blue";
+    else if (this.style.backgroundColor === "red") {
+        this.style.backgroundColor = "blue";
         console.log('blue');
     }
 }
-let box = document.getElementsByClassName('box');
-let choiceAnswer = myQuestion;
 
+let box = document.getElementsByClassName('box');
 for (let i = 0; i < box.length; i++) {
     box[i].addEventListener('click', selectAnswer);
-    if (myQuestion === [1]) {
-        choiceAnswer.innerHTML = document.getElementById('answers');
-    }
-    else if (myQuestion === [2]) {
-        choiceAnswer.innerHTML = document.getElementById('answers');
-    }
-    else if (myQuestion === [3]) {
-        choiceAnswer.innerHTML = "test";
-    }
-
-    console.log(choiceAnswer, 'clicked');
 }
+
+function choiceAns() {
+    let Ans = [];
+    let pickAns = myQuestion;
+
+    for (let A = 0; A < pickAns.length; A++)
+        if (Ans[A] === pickAns) {
+            document.getElementById('answers').innerHTML = pickAns;
+        }
+    console.log(Ans, pickAns, "click one");
+    console.log(Ans, pickAns, "click two");
+    console.log(Ans, pickAns, "click three");
+}
+
+let ans = document.getElementsByClassName('box');
+for (let i = 0; i < ans.length; i++) {
+    ans[i].addEventListener('click', choiceAns);
+}
+console.log(ans, "pick one ans");

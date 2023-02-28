@@ -141,10 +141,10 @@ body {
     position: relative;
 }
 
-#results .answers {
-    border: solid 1px blue;
-    width: 400px;
-    height: 70px;
+.answers {
+    border: solid 2px Red;
+    width: 900px;
+    height: 120px;
     display: flex;
     align-items: center;
     margin: 200px auto;
