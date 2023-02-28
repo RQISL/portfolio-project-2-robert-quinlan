@@ -128,6 +128,28 @@ body {
     text-align: center;
 }
 
+#results .btnResult {
+    display: flex;
+    align-items: center;
+    font-size: 0.5em;
+    background-color: blue;
+    color: beige;
+    text-decoration: none;
+    width: 20%;
+    padding: 20px;
+    margin: 450px auto;
+    position: relative;
+}
+
+#results .answers {
+    border: solid 1px blue;
+    width: 400px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    margin: 200px auto;
+}
+
 /* for index.html style */
 
 #container {
