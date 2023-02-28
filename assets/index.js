@@ -67,27 +67,24 @@ let questions = 0;
 
 // declared variable for the button click next the slides
 const nextBtn = document.getElementById('btnNext');
+let popAnswers = document.getElementById('results');
 nextBtn.addEventListener('click', () => {
     currentImg++;
     if (currentImg >= lastImg) {
         currentImg = lastImg;
         currentImg = 3;
-        document.getElementById('results').style.visibility = "visible";
+        popAnswers = document.getElementById('results').style.visibility = "visible";
     }
-    // else if (currentImg === 3) {
-    //     endofAnswers = false;
-    // }
+    else if (popAnswers >= lastImg) {
+
+        popAnswers = 4;
+    }
 
     poster.src = arrayOfImages[currentImg];
     document.getElementById('numberCounter').innerHTML = (currentImg + 1) + '/4';
     questions = document.getElementById('questions').innerHTML = myQuestion[currentImg];
 
 
-    // nextBtn.addEventListener('click', () => {
-
-    // })
-
-    // click highlight color
     function selectAnswer(event) {
         event.preventDefault();
         let colorBox = document.getElementsByClassName('box');
@@ -96,19 +93,29 @@ nextBtn.addEventListener('click', () => {
             this.style.backgroundColor = "red";
             console.log('red');
         }
-        else if (this.style.backgroundColor === "red") {
-            this.style.backgroundColor = "blue";
+        else if (colorBox.style.backgroundColor === "red") {
+            colorBox.style.backgroundColor = "blue";
             console.log('blue');
         }
     }
     let box = document.getElementsByClassName('box');
+    let choiceAnswer = myQuestion;
 
     for (let i = 0; i < box.length; i++) {
-
         box[i].addEventListener('click', selectAnswer);
+        if (myQuestion === [1]) {
+            choiceAnswer.innerHTML = document.getElementById('answers');
+        }
+        else if (myQuestion === [2]) {
+            choiceAnswer.innerHTML = document.getElementById('answers');
+        }
+        else if (myQuestion === [3]) {
+            choiceAnswer.innerHTML = document.getElementById('answers');
+        }
 
-        //console.log('clicked');
+        console.log(choiceAnswer, 'clicked');
     }
+
 });
 
 function selectAnswer(event) {
@@ -119,16 +126,25 @@ function selectAnswer(event) {
         this.style.backgroundColor = "red";
         console.log('red');
     }
-    else if (this.style.backgroundColor === "red") {
-        this.style.backgroundColor = "blue";
+    else if (colorBox.style.backgroundColor === "red") {
+        colorBox.style.backgroundColor = "blue";
         console.log('blue');
     }
 }
 let box = document.getElementsByClassName('box');
+let choiceAnswer = myQuestion;
 
 for (let i = 0; i < box.length; i++) {
-
     box[i].addEventListener('click', selectAnswer);
+    if (myQuestion === [1]) {
+        choiceAnswer.innerHTML = document.getElementById('answers');
+    }
+    else if (myQuestion === [2]) {
+        choiceAnswer.innerHTML = document.getElementById('answers');
+    }
+    else if (myQuestion === [3]) {
+        choiceAnswer.innerHTML = "test";
+    }
 
-    //console.log('clicked');
+    console.log(choiceAnswer, 'clicked');
 }
