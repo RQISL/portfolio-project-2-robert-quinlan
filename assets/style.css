@@ -119,7 +119,7 @@ body {
 #results {
     width: 70%;
     height: 90%;
-    background-color: chartreuse;
+    background-color: palevioletred;
     z-index: 4;
     position: absolute;
     margin: 0 15% 0 15%;
@@ -141,13 +141,14 @@ body {
     position: relative;
 }
 
-.answers {
+#answers {
     border: solid 2px Red;
     width: 900px;
     height: 120px;
     display: flex;
     align-items: center;
     margin: 200px auto;
+    background-color: brown;
 }
 
 /* for index.html style */
