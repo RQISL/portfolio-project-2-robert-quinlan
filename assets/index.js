@@ -60,26 +60,27 @@ myQuestion.push(
 
 // declare variable for the function
 const firstImg = 0;
-const lastImg = arrayOfImages.length;
+const lastImg = arrayOfImages.length - 1;
 let currentImg = 0;
 let poster = document.getElementsByClassName('poster')[0];
 let questions = 0;
+let clickAns = document.getElementById('getAnswer').style.visibility = "hidden";
 
 // declared variable for the button click next the slides
 const nextBtn = document.getElementById('btnNext');
-let plusAnswer = document.getElementById('results');
 nextBtn.addEventListener('click', () => {
     currentImg++;
     if (currentImg >= lastImg) {
         currentImg = lastImg;
-        plusAnswer = lastImg;
-        plusAnswer = document.getElementById('results').style.visibility = "visible";
+        clickAns = document.getElementById('getAnswer').style.visibility = "visible";
     }
     poster.src = arrayOfImages[currentImg];
     document.getElementById('numberCounter').innerHTML = (currentImg + 1) + '/4';
     questions = document.getElementById('questions').innerHTML = myQuestion[currentImg];
-    return questions;
 
+
+
+    // select the answer to make highlight red.
     function selectAnswer(event) {
         event.preventDefault();
         let colorBox = document.getElementsByClassName('box');
@@ -93,11 +94,11 @@ nextBtn.addEventListener('click', () => {
             console.log('blue');
         }
     }
-
     let box = document.getElementsByClassName('box');
     for (let i = 0; i < box.length; i++) {
         box[i].addEventListener('click', selectAnswer);
     }
+
 });
 
 function selectAnswer(event) {
@@ -114,26 +115,38 @@ function selectAnswer(event) {
     }
 }
 
+
 let box = document.getElementsByClassName('box');
 for (let i = 0; i < box.length; i++) {
     box[i].addEventListener('click', selectAnswer);
 }
 
-function choiceAns() {
-    let Ans = [];
-    let pickAns = myQuestion;
+let getAnswers = document.getElementById('results').style.visibility = "hidden";
+let clickAnsBtn = document.getElementById('getAnswer');
 
-    for (let A = 0; A < pickAns.length; A++)
-        if (Ans[A] === pickAns) {
-            document.getElementById('answers').innerHTML = pickAns;
-        }
-    console.log(Ans, pickAns, "click one");
-    console.log(Ans, pickAns, "click two");
-    console.log(Ans, pickAns, "click three");
+function resultanswer() {
+    getAnswers = document.getElementById('results').style.visibility = "visible";
+
+    // let Ans = [];
+    // let pickAns = myQuestion;
+
+    // for (let A = 0; A < pickAns.length; A++)
+    //     if (Ans[A] === pickAns) {
+    //         document.getElementById('answers').innerHTML = pickAns;
+    //     }
+    // console.log(Ans, pickAns, "click one");
+    // console.log(Ans, pickAns, "click two");
+    // console.log(Ans, pickAns, "click three");
+
+
+
 }
 
-let ans = document.getElementsByClassName('box');
-for (let i = 0; i < ans.length; i++) {
-    ans[i].addEventListener('click', choiceAns);
-}
-console.log(ans, "pick one ans");
+clickAnsBtn.addEventListener('click', resultanswer);
+
+
+// let ans = document.getElementsByClassName('box');
+// for (let i = 0; i < ans.length; i++) {
+//     ans[i].addEventListener('click', choiceAns);
+// }
+// console.log(ans, "pick one ans");
