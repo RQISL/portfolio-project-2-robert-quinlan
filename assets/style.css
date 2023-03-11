@@ -151,6 +151,14 @@ body {
     background-color: brown;
 }
 
+.incorrectAns{
+    background-color: red;
+}
+
+.correctAns{
+    background-color: greenyellow;
+}
+
 /* for index.html style */
 
 #container {
