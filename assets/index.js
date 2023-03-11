@@ -84,6 +84,8 @@ nextBtn.addEventListener('click', () => {
     function selectAnswer(event) {
         event.preventDefault();
         let colorBox = document.getElementsByClassName('box');
+        let rightAns = document.getElementsByClassName('correctAns');
+        let wrongAns = document.getElementsByClassName('incorrectAns');
 
         if (this.style.backgroundColor === "blue") {
             this.style.backgroundColor = "red";
@@ -93,13 +95,16 @@ nextBtn.addEventListener('click', () => {
             this.style.backgroundColor = "blue";
             console.log('blue');
         }
+
     }
-    let box = document.getElementsByClassName('box');
-    for (let i = 0; i < box.length; i++) {
-        box[i].addEventListener('click', selectAnswer);
+    let box1 = document.getElementsByClassName('box');
+    for (let i = 0; i < box1.length; i++) {
+        box1[i].addEventListener('click', selectAnswer);
     }
 
 });
+
+
 
 function selectAnswer(event) {
     event.preventDefault();
@@ -127,26 +132,33 @@ let clickAnsBtn = document.getElementById('getAnswer');
 function resultanswer() {
     getAnswers = document.getElementById('results').style.visibility = "visible";
 
-    // let Ans = [];
-    // let pickAns = myQuestion;
+    //     let Ans = myQuestion;
+    //     let selectAns = document.getElementsByClassName('box');
+    //     let rightAns = document.getElementsByClassName('correctAns');
+    //     let wrongAns = document.getElementsByClassName('incorrectAns');
 
-    // for (let A = 0; A < pickAns.length; A++)
-    //     if (Ans[A] === pickAns) {
-    //         document.getElementById('answers').innerHTML = pickAns;
-    //     }
-    // console.log(Ans, pickAns, "click one");
-    // console.log(Ans, pickAns, "click two");
-    // console.log(Ans, pickAns, "click three");
+    //         if (selectAns === rightAns) {
+    //             Ans = document.getElementsByClassName('answers').innerHTML = 'green';
+    //             console.log('green');
+    //         }
+    //         else if (selectAns === wrongAns) {
+    //             Ans = document.getElementsByClassName('answers').innerHTML = "Red";
+    //             console.log('Red');
+    //         }
 
+    //     document.getElementById('answers').innerHTML = Ans;
 
+    // }
 
+    // let ans = document.getElementsByClassName('box');
+    // for (let i = 0; i < ans.length; i++) {
+    //     ans[i].addEventListener('click', selectAnswer);
+    //     console.log(ans[i], "click one");
 }
+
 
 clickAnsBtn.addEventListener('click', resultanswer);
 
 
-// let ans = document.getElementsByClassName('box');
-// for (let i = 0; i < ans.length; i++) {
-//     ans[i].addEventListener('click', choiceAns);
-// }
+
 // console.log(ans, "pick one ans");
