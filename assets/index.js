@@ -10,7 +10,7 @@ username.addEventListener('keyup', () => {
 function entergame() {
     let displayname = document.querySelector('#displayName');
     let username = document.querySelector('#username').value;
-    displayname.innerHTML = `<span>Welcome</span> <span id="colorName"> ` + username + ` </span><p>Movie Quiz</p>`;
+    displayname.innerHTML = `<span>Welcome</span> <span id="colorName"> ` + username + `</span><span> Movie Quiz</span>`;
     document.getElementById("hidden").style.visibility = "hidden";
     username = document.getElementById('username').style.color = "blue";
 }
