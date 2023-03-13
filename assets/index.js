@@ -37,25 +37,25 @@ arrayOfImages.push(
 let myQuestion = [];
 myQuestion.push(
 
-    `<p class="box" style="background-color: brown;">Who is the actor in this moive?</p>
-     <p class="box incorrectAns" style="background-color: blue;">Bruce Wills</p>
-     <p class="box correctAns" style="background-color: blue;">Jim Carey</p>
-     <p class="box incorrectAns" style="background-color: blue;">Kevin Coster</p>`,
+    `<p class="boxQ">Who is the actor in this moive?</p>
+     <p class="box incorrectAns" >Bruce Wills</p>
+     <p class="box correctAns" >Jim Carey</p>
+     <p class="box incorrectAns" >Kevin Coster</p>`,
 
-    `<p class="box" style="background-color: brown;">Who is the director in this moive?</p>
-     <p class="box incorrectAns" style="background-color: blue;">Mel Gibson</p>
-     <p class="box incorrectAns" style="background-color: blue;">James Carden</p>
-     <p class="box correctAns" style="background-color: blue;">Kevin Coster</p>`,
+    `<p class="boxQ">Who is the director in this moive?</p>
+     <p class="box incorrectAns" >Mel Gibson</p>
+     <p class="box incorrectAns" >James Carden</p>
+     <p class="box correctAns" >Kevin Coster</p>`,
 
-    `<p class="box" style="background-color: brown;">When was make this film?</p>
-     <p class="box corectAns" style="background-color: blue;">1988</p>
-     <p class="box incorrectAns" style="background-color: blue;">1997</p>
-     <p class="box incorrectAns" style="background-color: blue;">2003</p>`,
+    `<p class="boxQ">When was make this film?</p>
+     <p class="box corectAns" >1988</p>
+     <p class="box incorrectAns" >1997</p>
+     <p class="box incorrectAns" >2003</p>`,
 
-    `<p class="box" style="background-color: brown;">When was make this film?</p>
-     <p class="box incorrectAns" style="background-color: blue;">1988</p>
-     <p class="box incorrectAns" style="background-color: blue;">1997</p>
-     <p class="box correctAns" style="background-color: blue;">2003</p>`,
+    `<p class="boxQ">When was make this film?</p>
+     <p class="box incorrectAns" >1988</p>
+     <p class="box incorrectAns" >1997</p>
+     <p class="box correctAns" >2003</p>`,
 );
 
 // declare variable for the function
