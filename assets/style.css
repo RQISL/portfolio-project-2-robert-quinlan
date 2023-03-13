@@ -30,15 +30,16 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: darkgray;
+    background-color: #c6978b;
     max-width: 30%;
     height: 80px;
+    padding: 0.5% 1% 0.5% 1%;
     margin: 0 auto;
 }
 
 #numberCounter {
     color: #2d2830;
-    font-size: 1.5em;
+    font-size: 2.5em;
     font-weight: bold;
     padding-right: 15%;
 }
@@ -49,21 +50,28 @@ body {
     background-color: #2d2830;
     color: #cbbcb2;
     padding: 10px 15px 10px 15px;
-    font-size: 1.5em;
+    font-size: 2.5em;
     margin: 0 20px 0 20px;
 }
 
 #questions {
     text-align: center;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.boxQ {
+    background-color: #c6978b;
+    font-size: 2.5em;
+    padding: 2%;
 }
 
 .box {
-    width: 70%;
-    font-size: 1.5em;
-    background-color: blue;
-    color: aliceblue;
+    font-size: 2.5em;
+    background-color: #cbbcb2;
+    color: #2d2830;
     margin: 12px auto;
-    padding: 10px;
+    padding: 1%;
     cursor: pointer;
 
 }
@@ -122,9 +130,10 @@ body {
     flex-direction: column;
     align-items: center;
     padding-top: 5%;
-    margin: 5% auto;
+    margin: 0 auto;
     background-color: #cbbcb2;
     color: #2d2830;
+    font-size: 2.5em;
 }
 
 #results {
@@ -161,13 +170,13 @@ body {
     background-color: brown;
 }
 
-.incorrectAns {
+/* .incorrectAns {
     background-color: red;
 }
 
 .correctAns {
     background-color: greenyellow;
-}
+} */
 
 /* for index.html style */
 
@@ -199,13 +208,34 @@ form {
     width: 100%;
     flex-direction: column;
     align-items: center;
-    max-width: 50rem;
+    max-width: 5%;
+    padding: 1%;
 }
 
 input {
     border: none;
-    width: 300px;
+    width: 50%;
     height: 70px;
     font-size: 1.5em;
+    padding: 1%;
     margin-bottom: 50px;
+}
+
+.btnEnter {
+    max-width: 100%;
+    font-size: 1.6em;
+    text-align: center;
+    background-color: #2d2830;
+    color: aliceblue;
+    padding: 20px;
+    margin-top: 5%;
+    cursor: pointer;
+}
+
+.btnEnter:hover {
+    cursor: pointer;
+}
+
+.btnEnter[disabled]:hover {
+    cursor: not-allowed;
 }
