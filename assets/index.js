@@ -72,7 +72,7 @@ nextBtn.addEventListener('click', () => {
     currentImg++;
     if (currentImg >= lastImg) {
         currentImg = lastImg;
-        clickAns = document.getElementById('getAnswer').style.visibility = "visible";
+       // clickAns = document.getElementById('getAnswer').style.visibility = "visible";
     }
     poster.src = arrayOfImages[currentImg];
     document.getElementById('numberCounter').innerHTML = (currentImg + 1) + '/4';
@@ -130,7 +130,7 @@ let getAnswers = document.getElementById('results').style.visibility = "hidden";
 let clickAnsBtn = document.getElementById('getAnswer');
 
 function resultanswer() {
-    getAnswers = document.getElementById('results').style.visibility = "visible";
+    //getAnswers = document.getElementById('results').style.visibility = "visible";
 
     //     let Ans = myQuestion;
     //     let selectAns = document.getElementsByClassName('box');
