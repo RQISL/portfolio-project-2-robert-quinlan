@@ -25,13 +25,13 @@ body {
     margin: 50px auto;
 }
 
-/* button prev and next */
+/* button next */
 .buttons {
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: #c6978b;
-    max-width: 30%;
+    width: 30%;
     height: 80px;
     padding: 0.5% 1% 0.5% 1%;
     margin: 0 auto;
@@ -116,7 +116,7 @@ body {
 #hidden {
     z-index: 2;
     width: 100%;
-    height: 130%;
+    height: 150%;
     background-color: #545a6b;
     margin: 0;
     position: absolute;
@@ -136,7 +136,7 @@ body {
     font-size: 2.5em;
 }
 
-#results {
+/* #results {
     width: 70%;
     height: 90%;
     background-color: palevioletred;
@@ -145,9 +145,9 @@ body {
     margin: 0 15% 0 15%;
     font-size: 5em;
     text-align: center;
-}
+} */
 
-#results .btnResult {
+/* #results .btnResult {
     display: flex;
     align-items: center;
     font-size: 0.5em;
@@ -158,7 +158,7 @@ body {
     padding: 20px;
     margin: 450px auto;
     position: relative;
-}
+} */
 
 #answers {
     border: solid 2px Red;
@@ -238,4 +238,153 @@ input {
 
 .btnEnter[disabled]:hover {
     cursor: not-allowed;
+}
+
+/* screen Desktop 24" (1900 x 1200) */
+@media only screen and (max-width: 1920px) {
+    #EnterBox {
+        font-size: 2em;
+    }
+}
+
+/* screen Desktop 22" (1680 x 1200) */
+@media only screen and (max-width: 1680px) {
+    #EnterBox {
+        font-size: 1.7em;
+    }
+
+    .boxQ {
+        font-size: 2em;
+    }
+
+    .box {
+        font-size: 2em;
+    }
+
+    #displayName {
+        font-size: 3em;
+    }
+
+    #numberCounter {
+        font-size: 2em;
+    }
+
+    .btn-next {
+        font-size: 2em;
+    }
+}
+
+/* screen Desktop 19" (1440 x 900) */
+@media only screen and (max-width: 1440px) {
+    #EnterBox {
+        font-size: 1.3em;
+    }
+
+    .boxQ {
+        font-size: 1.5em;
+    }
+
+    .box {
+        font-size: 1.5em;
+    }
+
+    #displayName {
+        font-size: 2.5em;
+    }
+
+    /* button next */
+    .buttons {
+        padding: 0.1%;
+    }
+
+    #numberCounter {
+        font-size: 1.5em;
+    }
+
+    .btn-next {
+        font-size: 1.5em;
+    }
+}
+
+/* screen Desktop 13" & 10" (1024 x 768) */
+@media only screen and (max-width: 1440px) {
+    #EnterBox {
+        font-size: 1em;
+    }
+
+    #movies img {
+        width: 35%;
+    }
+}
+
+/* screen tablet devices  (800 x 768) */
+@media only screen and (max-width: 1440px) {
+    #hidden {
+        height: 80%;
+        padding-top: 30%;
+    }
+
+    #EnterBox {
+        width: 70%;
+        font-size: 1em;
+    }
+
+    #questions {
+        width: 80%;
+    }
+
+    #movies img {
+        width: 45%;
+    }
+
+    .boxQ {
+        font-size: 1.7em;
+    }
+
+    .box {
+        font-size: 1.7em;
+    }
+
+    /* button next */
+    .buttons {
+        width: 60%;
+    }
+}
+
+/* screen mobile devices  ( 414 x 768) */
+@media only screen and (max-width: 414px) {
+    #hidden {
+        height: 90%;
+        padding-top: 30%;
+    }
+
+    #EnterBox {
+        width: 80%;
+        font-size: 0.8em;
+    }
+
+    #displayName {
+        font-size: 1.6em;
+    }
+
+    #questions {
+        width: 80%;
+    }
+
+    #movies img {
+        width: 55%;
+    }
+
+    .boxQ {
+        font-size: 1.3em;
+    }
+
+    .box {
+        font-size: 1.3em;
+    }
+
+    /* button next */
+    .buttons {
+        width: 60%;
+    }
 }
