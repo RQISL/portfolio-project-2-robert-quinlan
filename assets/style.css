@@ -75,10 +75,6 @@ body {
     cursor: pointer;
 
 }
-.box.active{
-    background-color: #c6978b;
-}
-
 #displayName {
     max-width: 90%;
     height: fit-content;
@@ -174,13 +170,13 @@ body {
     background-color: brown;
 }
 
-/* .incorrectAns {
+.incorrectAns.active {
     background-color: red;
 }
 
-.correctAns {
+.correctAns.active {
     background-color: greenyellow;
-} */
+}
 
 /* for index.html style */
 
