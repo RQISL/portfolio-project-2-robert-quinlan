@@ -47,7 +47,7 @@ myQuestion.push(
      <p class="box correctAns"  onclick="changeColor(this)"">Kevin Coster</p>`,
 
     `<p class="boxQ">When was make this film?</p>
-     <p class="box corectAns" onclick="changeColor(this)"" >1988</p>
+     <p class="box correctAns" onclick="changeColor(this)"" >1988</p>
      <p class="box incorrectAns" onclick="changeColor(this)"" >1997</p>
      <p class="box incorrectAns" onclick="changeColor(this)"" >2003</p>`,
 
@@ -79,10 +79,13 @@ nextBtn.addEventListener('click', () => {
 });
 
 // select the answer to make highlight background color.
+let rightAns = document.getElementsByClassName('correctAns');
 
 function changeColor(cell) {
-    // adds or removes the active class
+    // adds or removes the active class 
+
     cell.classList.toggle("active");
+
 }
 
 let getAnswers = document.getElementById('results').style.visibility = "hidden";
@@ -91,15 +94,6 @@ let clickAnsBtn = document.getElementById('getAnswer');
 function resultanswer() {
     getAnswers = document.getElementById('results').style.visibility = "visible";
 }
-
-const chooseAns = document.getElementsByClassName('box');
-let question = myQuestion;
-//chooseAns.addEventListener('click', () => {
-
-    chooseAns = document.getElementById('answers').innerHTML = question;
-//});
-console.log(chooseAns, 'output');
-
 clickAnsBtn.addEventListener('click', resultanswer);
 
 
