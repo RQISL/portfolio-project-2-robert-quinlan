@@ -12,7 +12,6 @@ function entergame() {
     let username = document.querySelector('#username').value;
     displayname.innerHTML = `<span>Welcome</span> <span id="colorName"> ` + username + `</span><span> Movie Quiz</span>`;
     document.getElementById("hidden").style.visibility = "hidden";
-    username = document.getElementById('username').style.color = "blue";
 }
 
 // Rapid Api key
@@ -38,24 +37,24 @@ let myQuestion = [];
 myQuestion.push(
 
     `<p class="boxQ">Who is the actor in this moive?</p>
-     <p class="box incorrectAns" >Bruce Wills</p>
-     <p class="box correctAns" >Jim Carey</p>
-     <p class="box incorrectAns" >Kevin Coster</p>`,
+     <p class="box incorrectAns"  onclick="changeColor(this)">Bruce Wills</p>
+     <p class="box correctAns" onclick="changeColor(this)"" >Jim Carey</p>
+     <p class="box incorrectAns" onclick="changeColor(this)"" >Kevin Coster</p>`,
 
     `<p class="boxQ">Who is the director in this moive?</p>
-     <p class="box incorrectAns" >Mel Gibson</p>
-     <p class="box incorrectAns" >James Carden</p>
-     <p class="box correctAns" >Kevin Coster</p>`,
+     <p class="box incorrectAns" onclick="changeColor(this)"" >Mel Gibson</p>
+     <p class="box incorrectAns" onclick="changeColor(this)"" >James Carden</p>
+     <p class="box correctAns"  onclick="changeColor(this)"">Kevin Coster</p>`,
 
     `<p class="boxQ">When was make this film?</p>
-     <p class="box corectAns" >1988</p>
-     <p class="box incorrectAns" >1997</p>
-     <p class="box incorrectAns" >2003</p>`,
+     <p class="box corectAns" onclick="changeColor(this)"" >1988</p>
+     <p class="box incorrectAns" onclick="changeColor(this)"" >1997</p>
+     <p class="box incorrectAns" onclick="changeColor(this)"" >2003</p>`,
 
     `<p class="boxQ">When was make this film?</p>
-     <p class="box incorrectAns" >1988</p>
-     <p class="box incorrectAns" >1997</p>
-     <p class="box correctAns" >2003</p>`,
+     <p class="box incorrectAns"  onclick="changeColor(this)"">1988</p>
+     <p class="box incorrectAns"  onclick="changeColor(this)"">1997</p>
+     <p class="box correctAns"  onclick="changeColor(this)"">2003</p>`,
 );
 
 // declare variable for the function
@@ -72,90 +71,34 @@ nextBtn.addEventListener('click', () => {
     currentImg++;
     if (currentImg >= lastImg) {
         currentImg = lastImg;
-       // clickAns = document.getElementById('getAnswer').style.visibility = "visible";
+        clickAns = document.getElementById('getAnswer').style.visibility = "visible";
     }
     poster.src = arrayOfImages[currentImg];
     document.getElementById('numberCounter').innerHTML = (currentImg + 1) + '/4';
     questions = document.getElementById('questions').innerHTML = myQuestion[currentImg];
-
-
-
-    // select the answer to make highlight red.
-    function selectAnswer(event) {
-        event.preventDefault();
-        let colorBox = document.getElementsByClassName('box');
-        let rightAns = document.getElementsByClassName('correctAns');
-        let wrongAns = document.getElementsByClassName('incorrectAns');
-
-        if (this.style.backgroundColor === "blue") {
-            this.style.backgroundColor = "red";
-            console.log('red');
-        }
-        else if (this.style.backgroundColor === "red") {
-            this.style.backgroundColor = "blue";
-            console.log('blue');
-        }
-
-    }
-    let box1 = document.getElementsByClassName('box');
-    for (let i = 0; i < box1.length; i++) {
-        box1[i].addEventListener('click', selectAnswer);
-    }
-
 });
 
+// select the answer to make highlight background color.
 
-
-function selectAnswer(event) {
-    event.preventDefault();
-    let colorBox = document.getElementsByClassName('box');
-
-    if (this.style.backgroundColor === "blue") {
-        this.style.backgroundColor = "red";
-        console.log('red');
-    }
-    else if (this.style.backgroundColor === "red") {
-        this.style.backgroundColor = "blue";
-        console.log('blue');
-    }
-}
-
-
-let box = document.getElementsByClassName('box');
-for (let i = 0; i < box.length; i++) {
-    box[i].addEventListener('click', selectAnswer);
+function changeColor(cell) {
+    // adds or removes the active class
+    cell.classList.toggle("active");
 }
 
 let getAnswers = document.getElementById('results').style.visibility = "hidden";
 let clickAnsBtn = document.getElementById('getAnswer');
 
 function resultanswer() {
-    //getAnswers = document.getElementById('results').style.visibility = "visible";
-
-    //     let Ans = myQuestion;
-    //     let selectAns = document.getElementsByClassName('box');
-    //     let rightAns = document.getElementsByClassName('correctAns');
-    //     let wrongAns = document.getElementsByClassName('incorrectAns');
-
-    //         if (selectAns === rightAns) {
-    //             Ans = document.getElementsByClassName('answers').innerHTML = 'green';
-    //             console.log('green');
-    //         }
-    //         else if (selectAns === wrongAns) {
-    //             Ans = document.getElementsByClassName('answers').innerHTML = "Red";
-    //             console.log('Red');
-    //         }
-
-    //     document.getElementById('answers').innerHTML = Ans;
-
-    // }
-
-    // let ans = document.getElementsByClassName('box');
-    // for (let i = 0; i < ans.length; i++) {
-    //     ans[i].addEventListener('click', selectAnswer);
-    //     console.log(ans[i], "click one");
+    getAnswers = document.getElementById('results').style.visibility = "visible";
 }
 
+const chooseAns = document.getElementsByClassName('box');
+let question = myQuestion;
+//chooseAns.addEventListener('click', () => {
+
+    chooseAns = document.getElementById('answers').innerHTML = question;
+//});
+console.log(chooseAns, 'output');
 
 clickAnsBtn.addEventListener('click', resultanswer);
 
