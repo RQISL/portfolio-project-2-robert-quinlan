@@ -11,10 +11,10 @@
 </head>
 
 <body>
-    <!-- <div id="results">Your answers are:
+    <div id="results">Your answers are:
         <p id="answers"></p>
         <a href="index.html" class="btnResult">Play again</a>
-    </div> -->
+    </div>
     <!-- closed results -->
     <div id="hidden">
         <div id="EnterBox">
@@ -34,9 +34,9 @@
         </div>
         <div id="questions">
             <p class="boxQ">Who is the actor in this moive?</p>
-            <p class="box incorrectAns">Bruce Wills</p>
-            <p class="box correctAns">Jim Carey</p>
-            <p class="box incorrectAns">Kevin Coster</p>
+            <p class="box incorrectAns" onclick="changeColor(this)">Bruce Wills</p>
+            <p class="box correctAns" onclick="changeColor(this)">Jim Carey</p>
+            <p class="box incorrectAns" onclick="changeColor(this)">Kevin Coster</p>
         </div>
         <!-- closed question -->
 
@@ -47,7 +47,7 @@
         <button id="getAnswer" class="btn" type="submit" onclick="resultanswer()">Get Answers</button>
         <!-- closed buttons -->
         <div class="mutli-answers"></div>
-    </div> 
+    </div>
     <!-- closed wrapperBox -->
 
     <div id="timeUp"></div>
