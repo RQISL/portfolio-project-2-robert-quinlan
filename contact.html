@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/style.css" rel="stylesheet">
+    <title>Enter your name</title>
+</head>
+
+<body>
+    <header>
+        <div id="headmeun">
+            <div id="logo"><img src="assets/images/MovieQuizLogo.png"></div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="moviequiz.html">Movie Quiz</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="contact_and_img_wrapper">
+        <form class="contact-form" method="POST" action="https://formdump.codeinstitute.net/">
+            <h2>Contact Us</h2>
+            <label for="fname">First Name</label>
+            <input id="fname" class="text-input" type="text" name="first_name" required>
+            <label for="lname">Last Name</label>
+            <input id="lname" class="text-input" type="text" name="last_name" required>
+            <label for="email">Email Address</label>
+            <input id="email" class="text-input" type="email" name="email_address" required>
+            <label for="subject">Subject</label>
+            <input id="subject" class="text-input" type="text" name="subject" required>
+            <label for="message">Message</label>
+            <textarea class="message_box" id="message" name="message" rows="4" cols="50" required></textarea>
+            <input class="join-button" type="submit" value="Send!">
+        </form>
+    </div>
+
+    <footer>
+        <p> Designed by Robert Quinlan 2023</p>
+    </footer>
+</body>
+
+</html>
