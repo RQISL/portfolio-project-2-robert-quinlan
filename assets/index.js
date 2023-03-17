@@ -63,7 +63,6 @@ const lastImg = arrayOfImages.length - 1;
 let currentImg = 0;
 let poster = document.getElementsByClassName('poster')[0];
 let questions = 0;
-let clickAns = document.getElementById('getAnswer').style.visibility = "hidden";
 
 // declared variable for the button click next the slides
 const nextBtn = document.getElementById('btnNext');
@@ -71,7 +70,6 @@ nextBtn.addEventListener('click', () => {
     currentImg++;
     if (currentImg >= lastImg) {
         currentImg = lastImg;
-        clickAns = document.getElementById('getAnswer').style.visibility = "visible";
     }
     poster.src = arrayOfImages[currentImg];
     document.getElementById('numberCounter').innerHTML = (currentImg + 1) + '/4';
@@ -88,13 +86,13 @@ function changeColor(cell) {
 
 }
 
-let getAnswers = document.getElementById('results').style.visibility = "hidden";
-let clickAnsBtn = document.getElementById('getAnswer');
+//let getAnswers = document.getElementById('results').style.visibility = "hidden";
+// let clickAnsBtn = document.getElementById('getAnswer');
 
-function resultanswer() {
-    getAnswers = document.getElementById('results').style.visibility = "visible";
-}
-clickAnsBtn.addEventListener('click', resultanswer);
+// function resultanswer() {
+//     getAnswers = document.getElementById('results').style.visibility = "visible";
+// }
+// clickAnsBtn.addEventListener('click', resultanswer);
 
 
 
