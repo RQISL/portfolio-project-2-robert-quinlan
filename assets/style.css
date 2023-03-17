@@ -349,20 +349,25 @@ footer p {
 
     /* header menu */
     #logo img {
-        width: 23%;
+        width: 20%;
     }
 
     #headmeun {
-        height: 180px;
+        height: 140px;
     }
 
     #headmeun li {
         font-size: 2em;
+        margin-top: 15px;
     }
 
     /* front page of the movie images layout */
+    #wrapper {
+        height: 1080px;
+    }
+
     #moviePoster img {
-        width: 68%;
+        width: 65%;
     }
 
     #btnGame {
@@ -412,11 +417,12 @@ footer p {
 
     /* footer bottom */
     footer {
-        height: 90px;
+        height: 40px;
     }
 
     footer p {
         font-size: 1.5em;
+        margin-top: -2px;
     }
 
     /* Enter username to fill before start game */
