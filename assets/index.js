@@ -81,9 +81,7 @@ let rightAns = document.getElementsByClassName('correctAns');
 
 function changeColor(cell) {
     // adds or removes the active class 
-
     cell.classList.toggle("active");
-
 }
 
 //let getAnswers = document.getElementById('results').style.visibility = "hidden";
