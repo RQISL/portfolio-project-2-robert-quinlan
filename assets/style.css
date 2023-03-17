@@ -227,9 +227,9 @@ input {
     cursor: pointer;
 }
 
-/* .box:hover {
+.box:hover {
     background-color: #c6978b;
-} */
+}
 
 #displayName {
     max-width: 90%;
@@ -356,12 +356,6 @@ footer p {
         height: 180px;
     }
 
-    #headmeun ul {
-        float: right;
-        margin-top: -60px;
-
-    }
-
     #headmeun li {
         font-size: 2em;
     }
@@ -369,9 +363,6 @@ footer p {
     /* front page of the movie images layout */
     #moviePoster img {
         width: 68%;
-        margin: 0 auto;
-        padding-top: 3%;
-        display: flex;
     }
 
     #btnGame {
@@ -394,66 +385,29 @@ footer p {
         width: 25%;
     }
 
-    /* button next */
+    /* button next with the question and answers */
     .buttons {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        background-color: #c6978b;
-        width: 30%;
-        height: 80px;
-        padding: 1%;
-        margin: 0 auto 10%;
+        padding: 0.5%;
     }
 
     #numberCounter {
-        color: #2d2830;
-        font-size: 2.5em;
-        font-weight: bold;
-        padding-right: 15%;
+        font-size: 2em;
     }
 
     .btn-next {
-        border: none;
-        outline: none;
-        background-color: #2d2830;
-        color: #cbbcb2;
-        padding: 10px 15px 10px 15px;
-        font-size: 2.5em;
-        margin: 0 20px 0 20px;
-    }
-
-    #questions {
-        text-align: center;
-        width: 60%;
-        margin: 0 auto;
+        font-size: 2em;
     }
 
     .boxQ {
-        background-color: #c6978b;
-        font-size: 2.5em;
-        padding: 2%;
+        font-size: 2em;
     }
 
     .box {
-        font-size: 2.5em;
-        background-color: #cbbcb2;
-        color: #2d2830;
-        margin: 12px auto;
-        padding: 1%;
-        cursor: pointer;
-    }
-
-    .box:hover {
-        background-color: #c6978b;
+        font-size: 2em;
     }
 
     #displayName {
         font-size: 3em;
-    }
-
-    #colorName {
-        color: #044555;
     }
 
     /* footer bottom */
@@ -484,39 +438,181 @@ footer p {
     .btnEnter {
         font-size: 1.2em;
     }
+
+    /* form */
+    .contact_and_img_wrapper {
+        width: 65%;
+    }
+
+    .contact-form {
+        font-size: 1.5em;
+    }
+
+
+    .contact-form h2 {
+        font-size: 1.5em;
+    }
 }
 
-/* screen Desktop 22" (1680 x 1200) */
+/* screen Desktop 22" (1680 x 1050) */
 @media only screen and (max-width: 1680px) {
+
+    /* header menu */
+    #logo img {
+        width: 20%;
+    }
+
+    #headmeun {
+        height: 140px;
+    }
+
+    #headmeun ul {
+        margin-top: -35px;
+
+    }
+
+    #headmeun li {
+        font-size: 1.5em;
+
+    }
+
+    /* front page of the movie images layout */
+    #moviePoster img {
+        width: 64%;
+        margin: 0 auto;
+        padding-top: 4%;
+    }
+
+    #btnGame {
+        margin: -5% auto;
+        text-align: center;
+    }
+
+    #btnGame a {
+        font-size: 2em;
+    }
+
+    /* Enter username to fill before start game */
+
     #EnterBox {
-        font-size: 1.7em;
+        width: 50%;
+        padding: 6%;
     }
 
-    .boxQ {
-        font-size: 2em;
+    #textHead {
+        font-size: 1.3em;
     }
 
-    .box {
-        font-size: 2em;
+    input {
+        width: 55%;
+        font-size: 1em;
     }
 
-    #displayName {
-        font-size: 3em;
-    }
-
-    #numberCounter {
-        font-size: 2em;
-    }
-
-    .btn-next {
-        font-size: 2em;
+    .btnEnter {
+        font-size: 1em;
     }
 }
 
 /* screen Desktop 19" (1440 x 900) */
 @media only screen and (max-width: 1440px) {
+
+    /* header menu */
+    #headmeun {
+        height: 120px;
+    }
+
+    /* front page of the movie images layout  and button*/
+
+    #btnGame a {
+        font-size: 1.5em;
+    }
+
+    /* Enter username to fill before start game */
+
     #EnterBox {
+        width: 40%;
+        padding: 6%;
+    }
+
+    #textHead {
+        font-size: 1.1em;
+    }
+
+    input {
+        width: 55%;
+        font-size: 0.8em;
+    }
+
+    .btnEnter {
+        font-size: 0.8em;
+    }
+
+    /* form */
+    .contact-form {
+        width: 60%;
+        font-size: 1.5em;
+    }
+
+
+    .contact-form h2 {
+        font-size: 1.5em;
+    }
+
+    /* footer buttom */
+    footer {
+        height: 70px;
+    }
+
+    footer P {
         font-size: 1.3em;
+    }
+
+}
+
+/* screen Desktop 13" & 10" (1024 x 768) */
+@media only screen and (max-width: 1024px) {
+
+    /* header menu */
+    #logo img {
+        margin: 30px 0 0 30px;
+    }
+
+    #headmeun {
+        height: 90px;
+    }
+
+    #headmeun li {
+        margin-top: 6px;
+        font-size: 1.3em;
+    }
+
+    /* front page of the movie images layout */
+    #moviePoster img {
+        width: 80%;
+    }
+
+    #btnGame {
+        margin: -5% auto;
+        text-align: center;
+    }
+
+    #btnGame a {
+        font-size: 1.5em;
+    }
+
+    /* output image of poster */
+
+    #movies img {
+        width: 35%;
+    }
+
+    /* button next with the question and answers */
+    #numberCounter {
+        font-size: 1.5em;
+    }
+
+    .btn-next {
+        font-size: 1.5em;
     }
 
     .boxQ {
@@ -528,12 +624,72 @@ footer p {
     }
 
     #displayName {
-        font-size: 2.5em;
+        font-size: 2em;
     }
 
-    /* button next */
-    .buttons {
-        padding: 0.1%;
+    /* footer bottom */
+    footer {
+        height: 40px;
+    }
+
+    footer p {
+        font-size: 1em;
+    }
+
+    /* Enter username to fill before start game */
+
+    #EnterBox {
+        width: 40%;
+        padding: 8%;
+    }
+
+    #textHead {
+        font-size: 1em;
+    }
+
+    input {
+        width: 80%;
+        font-size: 0.8em;
+    }
+
+    .btnEnter {
+        font-size: 0.8em;
+    }
+
+    /* form */
+    .contact_and_img_wrapper {
+        width: 75%;
+    }
+
+    .contact-form {
+        font-size: 1.2em;
+    }
+}
+
+/* screen tablet devices  (800 x 768) */
+@media only screen and (max-width: 800px) {
+
+    /* header menu */
+    #logo img {
+        width: 30%;
+        margin: 20px 0 0 30px;
+    }
+
+    /* front page of the movie images layout */
+    #moviePoster img {
+        padding-top: 30%;
+        width: 100%;
+    }
+
+    /* output image of poster */
+
+    #movies img {
+        width: 35%;
+    }
+
+    /* button next with the question and answers */
+    #wrapperBox {
+        margin: 20% 0 10% 4.5%;
     }
 
     #numberCounter {
@@ -543,87 +699,441 @@ footer p {
     .btn-next {
         font-size: 1.5em;
     }
-}
 
-/* screen Desktop 13" & 10" (1024 x 768) */
-@media only screen and (max-width: 1440px) {
-    #EnterBox {
+    .boxQ {
+        font-size: 1.5em;
+    }
+
+    .box {
+        font-size: 1.5em;
+    }
+
+    #displayName {
+        font-size: 2em;
+    }
+
+    /* footer bottom */
+    footer {
+        height: 40px;
+    }
+
+    footer p {
         font-size: 1em;
     }
+
+    /* Enter username to fill before start game */
+
+    #EnterBox {
+        width: 50%;
+        padding: 8%;
+        margin: 40% auto 50%;
+    }
+
+    #textHead {
+        font-size: 1em;
+    }
+
+    input {
+        width: 80%;
+        font-size: 0.8em;
+    }
+
+    .btnEnter {
+        font-size: 0.8em;
+    }
+
+    /* form */
+    .contact_and_img_wrapper {
+        width: 100%;
+        padding-top: 15%;
+    }
+
+    .contact-form {
+        font-size: 1.2em;
+    }
+}
+
+/* screen tablet devices  (768 x 900) */
+@media only screen and (max-width: 768px) {
+
+    /* header menu */
+    #logo img {
+        width: 30%;
+        margin: 20px 0 0 20px;
+    }
+
+    /* front page of the movie images layout */
+    #moviePoster img {
+        padding-top: 25%;
+        width: 100%;
+    }
+
+    /* output image of poster */
 
     #movies img {
-        width: 35%;
-    }
-}
-
-/* screen tablet devices  (800 x 768) */
-@media only screen and (max-width: 1440px) {
-    #hidden {
-        height: 80%;
-        padding-top: 30%;
+        width: 46%;
     }
 
-    #EnterBox {
-        width: 70%;
-        font-size: 1em;
+    /* button next with the question and answers */
+    #wrapperBox {
+        margin: 11% 0 12% 4.5%;
     }
 
     #questions {
         width: 80%;
     }
+
+    #displayName {
+        margin-top: -1%;
+        font-size: 1.5em;
+    }
+
+    /* footer bottom */
+    footer {
+        height: 20px;
+    }
+
+    footer p {
+        font-size: 1em;
+    }
+
+    /* Enter username to fill before start game */
+
+    #EnterBox {
+        width: 55%;
+        padding: 8%;
+        margin: 40% auto 50%;
+    }
+
+    #textHead {
+        font-size: 0.8em;
+    }
+
+    input {
+        width: 90%;
+        font-size: 0.7em;
+    }
+
+    .btnEnter {
+        font-size: 0.5em;
+    }
+
+    /* form */
+
+    .contact-form {
+        width: 70%;
+        font-size: 1em;
+    }
+
+    .text-input {
+        height: 40px;
+    }
+}
+
+/* screen tablet devices  (600 x 900) */
+@media only screen and (max-width: 600px) {
+
+    /* header menu */
+    #logo img {
+        width: 35%;
+        margin: 25px 0 0 20px;
+    }
+
+    #headmeun {
+        height: 80px;
+    }
+
+    #headmeun ul {
+        margin-top: -32px
+    }
+
+    #headmeun li {
+        font-size: 1em;
+    }
+
+    /* front page of the movie images layout */
+    #moviePoster img {
+        padding-top: 30%;
+        width: 100%;
+    }
+
+    /* output image of poster */
 
     #movies img {
         width: 45%;
     }
 
-    .boxQ {
-        font-size: 1.7em;
-    }
-
-    .box {
-        font-size: 1.7em;
-    }
-
-    /* button next */
-    .buttons {
-        width: 60%;
-    }
-}
-
-/* screen mobile devices  ( 414 x 768) */
-@media only screen and (max-width: 414px) {
-    #hidden {
-        height: 90%;
-        padding-top: 30%;
-    }
-
-    #EnterBox {
-        width: 80%;
-        font-size: 0.8em;
-    }
-
-    #displayName {
-        font-size: 1.6em;
+    /* button next with the question and answers */
+    #wrapperBox {
+        margin: 15% 0 10% 4.5%;
     }
 
     #questions {
         width: 80%;
     }
 
+    .buttons {
+        width: 50%;
+        height: 60px;
+    }
+
+    #numberCounter {
+        font-size: 1.2em;
+    }
+
+    .btn-next {
+        font-size: 1.2em;
+    }
+
+    .boxQ {
+        font-size: 1.2em;
+    }
+
+    .box {
+        font-size: 1.2em;
+    }
+
+    #displayName {
+        margin-top: -1%;
+        font-size: 1.5em;
+    }
+
+    /* footer bottom */
+    footer {
+        height: 20px;
+    }
+
+    footer p {
+        font-size: 1em;
+    }
+
+    /* Enter username to fill before start game */
+
+    #EnterBox {
+        width: 55%;
+        padding: 8%;
+        margin: 40% auto 50%;
+    }
+
+    #textHead {
+        font-size: 0.8em;
+    }
+
+    input {
+        width: 90%;
+        font-size: 0.7em;
+    }
+
+    .btnEnter {
+        font-size: 0.5em;
+    }
+
+    /* form */
+
+    .contact-form {
+        width: 70%;
+        font-size: 1em;
+    }
+
+    .text-input {
+        height: 40px;
+    }
+}
+
+/* screen mobile devices  ( 414 x 768) */
+@media only screen and (max-width: 414px) {
+
+    /* header menu */
+    #logo img {
+        width: 35%;
+        margin: 15px 125px;
+        position: absolute;
+    }
+
+    #headmeun {
+        height: 90px;
+    }
+
+    #headmeun ul {
+        margin-top: 55px;
+        float: left;
+        position: absolute;
+    }
+
+    #headmeun li {
+        font-size: 1em;
+    }
+
+    /* front page of the movie images layout */
+    #moviePoster img {
+        padding-top: 45%;
+        width: 100%;
+    }
+
+    #btnGame a {
+        font-size: 1.5em;
+    }
+
+    /* output image of poster */
+
     #movies img {
         width: 55%;
     }
 
+    /* button next with the question and answers */
+    #wrapperBox {
+        margin: 15% 0 10% 4.5%;
+    }
+
+    #questions {
+        width: 86%;
+    }
+
+    .buttons {
+        width: 60%;
+        height: 40px;
+    }
+
+    #numberCounter {
+        font-size: 1em;
+    }
+
+    .btn-next {
+        font-size: 0.7em;
+    }
+
     .boxQ {
-        font-size: 1.3em;
+        font-size: 1em;
     }
 
     .box {
-        font-size: 1.3em;
+        font-size: 1em;
     }
 
-    /* button next */
+    #displayName {
+        margin-top: 10%;
+        font-size: 1em;
+    }
+
+    /* footer bottom */
+    footer {
+        height: 15px;
+        margin-left: -10%;
+    }
+
+    footer p {
+        font-size: 0.5em;
+    }
+
+    /* Enter username to fill before start game */
+
+    #EnterBox {
+        width: 55%;
+        padding: 8%;
+        margin: 50% auto 50%;
+    }
+
+    #textHead {
+        font-size: 0.6em;
+    }
+
+    input {
+        font-size: 0.5em;
+        height: 40px;
+    }
+
+    .btnEnter {
+        font-size: 0.4em;
+    }
+
+    /* form */
+
+    .contact-form {
+        width: 80%;
+        font-size: 0.9em;
+    }
+
+    .text-input {
+        height: 30px;
+    }
+}
+
+/* screen mobile devices  ( 375 x 768) */
+@media only screen and (max-width: 375px) {
+
+    /* header menu */
+
+    #headmeun li {
+        font-size: 0.8em;
+    }
+
+    /* front page btn */
+
+    #btnGame a {
+        font-size: 1em;
+    }
+
+    /* output image of poster */
+
+    #movies img {
+        width: 55%;
+    }
+
+    /* button next with the question and answers */
     .buttons {
-        width: 60%;
+        width: 65%;
+        height: 40px;
+    }
+
+    #numberCounter {
+        font-size: 0.7em;
+    }
+
+    .btn-next {
+        font-size: 0.6em;
+    }
+
+    .boxQ {
+        font-size: 0.7em;
+    }
+
+    .box {
+        font-size: 0.7em;
+    }
+
+    /* footer bottom */
+    footer {
+        height: 2px;
+    }
+
+    footer p {
+        font-size: 0.5em;
+        margin-top: -2%;
+    }
+
+    /* Enter username to fill before start game */
+
+    #textHead {
+        font-size: 0.5em;
+    }
+
+    input {
+        font-size: 0.4em;
+        height: 35px;
+    }
+
+    .btnEnter {
+        font-size: 0.3em;
+    }
+
+    /* form */
+    .contact-form {
+        width: 80%;
+        font-size: 0.7em;
+    }
+
+    .text-input {
+        height: 20px;
+        margin-bottom: 5px;
     }
 }
