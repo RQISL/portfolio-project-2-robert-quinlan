@@ -3,26 +3,173 @@ body {
     background-color: #545a6b;
 }
 
+/* Hearder logo and meun */
+
+#logo img {
+    width: 25%;
+    margin: 40px 0 0 30px;
+    position: relative;
+}
+
+#headmeun {
+    width: 100%;
+    height: 230px;
+    background-color: #c6978b;
+    margin: -20px 0 0 -10px;
+    position: fixed;
+    z-index: 5;
+}
+
+#headmeun ul {
+    float: right;
+    margin-top: -60px;
+}
+
+#headmeun li {
+    display: inline-block;
+    float: none;
+    font-size: 3em;
+}
+
+#headmeun a {
+    text-decoration: none;
+    color: #2d2830;
+    padding: 10px 20px 0 20px;
+}
+
+/* front page of the movie images layout */
+#moviePoster img {
+    width: 80%;
+    margin: 170px 0 0 10%;
+}
+
+#btnGame {
+    background-color: #c6978b;
+    width: 20%;
+    margin: -6% auto;
+    padding: 30px 0 30px 0;
+    text-align: center;
+    position: relative;
+}
+
+#btnGame a {
+    color: #2d2830;
+    font-size: 3em;
+    text-decoration: none;
+
+}
+
+#btnGame a:hover {
+    background-color: #2d2830;
+    color: #cbbcb2;
+    padding: 35px 125px 35px 125px;
+}
+
+/* Enter username to fill before start game */
+
+#hidden {
+    z-index: 2;
+    width: 100%;
+    background-color: #545a6b;
+    margin: 0;
+    position: fixed;
+}
+
+#EnterBox {
+    width: 50%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15%;
+    margin: 15% auto 15%;
+    background-color: #cbbcb2;
+    color: #2d2830;
+    font-size: 2.5em;
+}
+
+.btn {
+    width: 400px;
+    font-size: 2em;
+    text-align: center;
+    background-color: #2d2830;
+    color: aliceblue;
+    padding: 20px;
+    margin-top: 5%;
+    cursor: pointer;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.btn[disabled]:hover {
+    cursor: not-allowed;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2em;
+    padding-top: 50px;
+}
+
+#textHead {
+    font-size: 2em;
+    padding-bottom: 50px;
+}
+
+form {
+    margin: 50px auto;
+}
+
+input {
+    border: none;
+    width: 50%;
+    height: 70px;
+    font-size: 1.5em;
+    padding: 1%;
+    margin-bottom: 50px;
+}
+
+.btnEnter {
+    max-width: 100%;
+    font-size: 1.6em;
+    text-align: center;
+    background-color: #2d2830;
+    color: aliceblue;
+    padding: 20px;
+    margin-top: 5%;
+    cursor: pointer;
+}
+
+.btnEnter:hover {
+    cursor: pointer;
+}
+
+.btnEnter[disabled]:hover {
+    cursor: not-allowed;
+}
+
 /* display the box inside quiz for a poster slide */
 #wrapperBox {
     width: 90%;
     height: fit-content;
     background-color: #2d2830;
-    margin: 5% auto;
-    padding-top: 2%;
-    z-index: -2;
-
+    margin: 0 0 10% 3%;
+    padding: 2%;
+    position: absolute;
 }
 
 /* output image of poster */
 #movies {
     display: flex;
     flex-wrap: wrap;
+    margin-top: -6%;
 }
 
 #movies img {
-    width: 25%;
-    margin: 50px auto;
+    width: 30%;
+    margin: 0 auto;
 }
 
 /* button next */
@@ -33,8 +180,8 @@ body {
     background-color: #c6978b;
     width: 30%;
     height: 80px;
-    padding: 0.5% 1% 0.5% 1%;
-    margin: 0 auto;
+    padding: 0.5% 1% 1% 1%;
+    margin: 0 auto 10%;
 }
 
 #numberCounter {
@@ -73,101 +220,25 @@ body {
     margin: 12px auto;
     padding: 1%;
     cursor: pointer;
-
 }
+
+.box:hover {
+    background-color: #c6978b;
+}
+
 #displayName {
     max-width: 90%;
     height: fit-content;
     font-size: 4em;
     text-align: center;
-    padding-top: 2%;
     background-color: #cbbcb2;
     color: #2d2830;
-    margin: 0 auto;
+    margin: 10% auto;
     padding: 2%;
 }
 
 #colorName {
     color: #044555;
-}
-
-/* Overlay enter Username */
-.btn {
-    width: 400px;
-    font-size: 2em;
-    text-align: center;
-    background-color: #2d2830;
-    color: aliceblue;
-    padding: 20px;
-    margin-top: 5%;
-    cursor: pointer;
-}
-
-.btn:hover {
-    cursor: pointer;
-}
-
-.btn[disabled]:hover {
-    cursor: not-allowed;
-}
-
-
-#hidden {
-    z-index: 2;
-    width: 100%;
-    height: 150%;
-    background-color: #545a6b;
-    margin: 0;
-    position: absolute;
-    color: azure;
-}
-
-#EnterBox {
-    width: 50%;
-    height: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 5%;
-    margin: 0 auto;
-    background-color: #cbbcb2;
-    color: #2d2830;
-    font-size: 2.5em;
-}
-
-#results {
-    width: 70%;
-    height: 90%;
-    background-color: palevioletred;
-    z-index: 4;
-    position: absolute;
-    margin: 0 15% 0 15%;
-    font-size: 5em;
-    text-align: center;
-    visibility: hidden;
-}
-
-#results .btnResult {
-    display: flex;
-    align-items: center;
-    font-size: 0.5em;
-    background-color: blue;
-    color: beige;
-    text-decoration: none;
-    width: 20%;
-    padding: 20px;
-    margin: 450px auto;
-    position: relative;
-}
-
-#answers {
-    border: solid 2px Red;
-    width: 900px;
-    height: 120px;
-    display: flex;
-    align-items: center;
-    margin: 200px auto;
-    background-color: brown;
 }
 
 .incorrectAns.active {
@@ -178,66 +249,93 @@ body {
     background-color: greenyellow;
 }
 
-/* for index.html style */
-
-#container {
-    width: 800px;
-    height: 600px;
-    background-color: cornflowerblue;
-    color: aliceblue;
-    margin: 150px auto;
-}
-
-h1 {
-    text-align: center;
-    font-size: 2em;
-    padding-top: 50px;
-}
-
-#textHead {
-    font-size: 2em;
-    padding-bottom: 50px;
-}
-
-form {
-    margin: 50px auto;
-}
-
-#yourName {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    align-items: center;
-    max-width: 5%;
-    padding: 1%;
-}
-
-input {
-    border: none;
-    width: 50%;
-    height: 70px;
-    font-size: 1.5em;
-    padding: 1%;
-    margin-bottom: 50px;
-}
-
-.btnEnter {
-    max-width: 100%;
-    font-size: 1.6em;
-    text-align: center;
+/* form */
+.contact_and_img_wrapper {
     background-color: #2d2830;
-    color: aliceblue;
-    padding: 20px;
-    margin-top: 5%;
-    cursor: pointer;
+    position: absolute;
+    margin: 10% 0 0 15%;
+    padding: 130px 0 130px 0;
+    width: 70%;
 }
 
-.btnEnter:hover {
-    cursor: pointer;
+.contact-form {
+    color: black;
+    background-color: #cbbcb2;
+    width: 45%;
+    height: fit-content;
+    border-radius: 30px;
+    padding: 30px;
+    font-size: 2em;
 }
 
-.btnEnter[disabled]:hover {
-    cursor: not-allowed;
+
+.contact-form h2 {
+    color: #2d2830;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.text-input {
+    color: black;
+    width: 95%;
+    height: 45px;
+    margin: 5px 0 40px 0;
+    border: 2px solid #2d2830;
+    border-radius: 2px;
+
+}
+
+.text-input:hover {
+    border-color: #c6978b;
+}
+
+.message_box {
+    color: black;
+    width: 100%;
+    max-height: 250px;
+    margin: 5px 0 20px 0;
+    border: 1px solid #2d2830;
+    border-radius: 2px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.message_box:hover {
+    border-color: #c6978b;
+}
+
+/* button */
+.join-button {
+    width: 80%;
+    margin-top: 20px;
+    margin: auto;
+    clear: both;
+    padding: 15px 32px 15px 32px;
+    text-align: center;
+    font-size: 100%;
+    background-color: #2d2830;
+    color: #cbbcb2;
+    display: block;
+}
+
+.join-button:hover {
+    background-color: #c6978b;
+    color: #2d2830;
+}
+
+footer {
+    background-color: #c6978b;
+    width: 100%;
+    height: 120px;
+    padding: 30px;
+    margin-left: -10px;
+    position: absolute;
+    bottom: 0;
+}
+
+footer p {
+    text-align: center;
+    font-size: 2em;
+    color: #2d2830;
 }
 
 /* screen Desktop 24" (1900 x 1200) */
