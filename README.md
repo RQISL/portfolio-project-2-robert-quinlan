@@ -11,129 +11,92 @@
 ![](assets/Image-for-ReadMe/MindMap.png)
 
  # Quick Sketch UX
- * ## Desktop
+ * ## Desktop & Mobile
 
-![](assets/Image-for-ReadMe/sketch_Desktop_movies_quiz.png)
-
-* ## Mobile
-
-![](assets/Image-for-ReadMe/sketch_Mobile_movies_quiz.png)
+![](assets/Image-for-ReadMe/SketchDesktopandMobile.png)
 
 # Wireframe 
-* Design wireframe UX for Desktop & Mobile:
+* # Design wireframe UX for Desktop & Mobile
 
 * ## Desktop
-
-<img src="./assets/Image-for-ReadMe/Desktop_StartGame.png" width=700>
-
-<img src="./assets/Image-for-ReadMe/Desktop_TimeUp.png" width=700>
-
-<img src="./assets/Image-for-ReadMe/Desktop_Answers.png" width=700>
-
+![](assets/Image-for-ReadMe/WireframeDesktop.png)
 
 * ## Mobile
-
-<img src="./assets/Image-for-ReadMe/Mobile_StartGame.png" width=400>
-
-<img src="./assets/Image-for-ReadMe/Mobile_TimeUp.png" width=400>
-
-<img src="./assets/Image-for-ReadMe/Mobile_Answers.png" width=400>
+![](assets/Image-for-ReadMe/WireframeMobile.png)
 
 ## Colour Pallet
 
 * I choose the colour pallet, I catch my eye with the colour that I like where I serached website that I found one I choose the [colour pallet](https://www.letseatcake.com/color-palettes-from-films/) and I took a screenshot as see attached here:
 
-<img src="./assets/Image-for-ReadMe/ColourPallet.png">
+![](assets/Image-for-ReadMe/ColourPallet.png)
 
-
-
+* ## I choose some of the color, see picture below:
+![](assets/Image-for-ReadMe/ChooseColor.png)
 
 --------------------------------------------------------------------------------------------------------
 # Design and development the movie quiz for desktop & mobile devices
-
 
 ## Logo: Movies Quiz
 
 ![CI logo](assets/Image-for-ReadMe/MovieQuizLogo.png)
 
-* The site is a Movie Quiz The target is users who are interested movies and challenage knowledge of the movies as follow director, actors, write screenplay, eidtor, and so on.
-
-![alt text]( assets/images/ReadMe-image/Mockup%20Michael%20Collins%20screens.jpg "it is open source by https://www.freepik.com/premium-psd/mockup-electronic-devices_2565884.htm#from_view=detail_serie  and I edited from my photoshop.")
-
 Features
 -------------
+* The site is a Movie Quiz The target is users who are interested in movies and challenge their knowledge of the movies by following directors, actors, writing screenplays, editors, and so on.
+![](assets/Image-for-ReadMe/Project_2_mockup_responsive_screen.png)
 
-This website links outside sites where it has depth information. The aim is easier for the users to find links and follow Michael Collins’s information for their users’ convenience.
 
 Existing Features
 -----------------------
 ### Navigation Bar
 
-* The page sections are five links, including a responsiveness navigation bar and a three-dash button to the dropdown menu. 
-* The sections are Home, About, Timelines, Museum, Contact, and Footer, it is all include responsiveness.
+* The header menu are three pages which are Home, Movie Quiz and Contact.
+![](assets/Image-for-ReadMe/MenuDesktop.png)
 
-### Desktop/laptop responsive
+### Home page
+* Display on the front image layout page
+* The image below the button to enter play game or there is either on top of the menu 'movie quiz".
 
-![]( assets/images/ReadMe-image/Desktop-laptop%20Nav-Menu.png)
+![]( assets/Image-for-ReadMe/frontPage.png)
 
-### Tablet/Mobile devices for responsive
+### Entry Username for the Movie Quiz page
+* Either click to Play Game button or Movie Quiz on the menu page,
+*Then first fill in the username, if you don't fill in the name and it won't enter the game until you fill in the username then it will be able to enter the quiz. See the picture below:
 
-![]( assets/images/ReadMe-image/Reponsive-menu.png)
+![](assets/Image-for-ReadMe/FilledUsername.png)
 
-### Tablet/Mobile Devices for dropdown menu responsive**
+* when you enter username and click button _**`Let Play Movie Quiz`**_   then go to the Movie Quiz page as you can see the underline red highlight of the username. 
+* On the top display "Welcome _**`username`**_   to Movie Quiz, it will display your name when you fill in the username. See the picture below: 
 
-![]( assets/images/ReadMe-image/responsive%20dropdown-menu.png)
+![]( assets/Image-for-ReadMe/DisplayUsername.png)
 
-### Home section
-* Images on the left side and text on the right.
-* Brief text to story about Michael Collins
-* The art image is powerful and shows how he was a legend.
-* The painting by Leo Whelan painting.
+### Select the answer to the question on the movie quiz page
 
-![]( assets/images/ReadMe-image/Home-Section.png)
+* To roll up the demand of the screen screen
+* There is a button _**`Next`**_   to the next quest up to 4 question
+* When you clcik onto the answer and it will be display red or green highligh which it is either right or wrong the answers. See a couple of pictures to show either right or wrong answers
 
-### About Section
-* Image of headstone display and text brief about the site.
+![]( assets/Image-for-ReadMe/RightAnswers.png) ![](assets/Image-for-ReadMe/WrongAnswers.png)
 
-![]( assets/images/ReadMe-image/About%20Michael%20Collins1.png)
+### Contact page
 
-### Michael Collins's history of the Timeline section
+* Send a request to the users who wish to have any comments.  See the picture, which it is responsive screen as see below:
 
-* On the timelines, a page is a brief story in the timeline years and a link at the bottom box, it gives further information outside sites and gives more depth about his stories. 
-* Hovering on the image will make the size enlarge.
+![]( assets/Image-for-ReadMe/ContactPage.png)
 
-![]( assets/images//ReadMe%20image/Timeline-section.png)
+### Footer 
+* keep simple display as who is design of the website by me.
 
-### Museum Section
-
-* The site is together with information links from outside sites to look at the museums' page link to direct and buy a ticket who wish to visit the museums. 
-
-![]( assets/images/ReadMe-image/Museum%20section1.png)
-
-### Contact section
-
-* Send a request for the users who require accessibility building or other comments as they request.  
-
-![]( assets/images//ReadMe-image/Contact%20section.png)
-
-### Footer Section
-* Display on the logo, social media and site maps.
-* Link to the social media directions either 
-* Facebook, Twitter, Instagram or YouTube for further information on Michael Collins history.  
-* Site maps add in the case for users’ convenience to links to go back home, about, timeline, museum or contact. 
-
-![]( assets/images//ReadMe-image/Footer%20section.png)
+![]( assets/Image-for-ReadMe/Footer.png)
 
 ### Testing
-
- * The testing has been browsers, are Chrome, Firebox, Safari, Opera and Edge. There are a few problems which are Safari, does not support therefore use “scroll-behaviour: smooth;” in the CSS style. I searched to find what is it problem but it would need to use JavaScript.
-
-* The testing runs Chrome, Opera, Microsoft Edge and Firefox and it does support them. All the screens are fine and responsive but sight little different sizes of aspect screens. 
+* The testing runs testing for Chrome, Opera, Microsoft Edge and Firefox and it does support them. All the screens are fine and responsive but sight little different sizes of aspect screens. 
 
 
 ### The lighthouse runs testing and results.
+* there was a quite low performance at the lighthouse. I made add Alt in each image, and also I add to Meta keywords. It went to improve the results as the seen picture below:
 
-![]( assets/images//ReadMe-image/Lighthouse-testing.png)
+![]( assets/Image-for-ReadMe/LighthouseResults.png)
 
 
 ### Validation testing
