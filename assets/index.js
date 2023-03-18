@@ -29,7 +29,7 @@ arrayOfImages.push(
     'https://m.media-amazon.com/images/M/MV5BMDFkYTc0MGEtZmNhMC00ZDIzLWFmNTEtODM1ZmRlYWMwMWFmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_QL75_UX380_CR0,1,380,562_.jpg alt = "Movie poster called The ShawsHank"',
     'https://m.media-amazon.com/images/M/MV5BM2MyNjYxNmUtYTAwNi00MTYxLWJmNWYtYzZlODY3ZTk3OTFlXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_QL75_UY562_CR8,0,380,562_.jpg alt="Movie poster called The Godfather"',
     'https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_QL75_UX380_CR0,0,380,562_.jpg alt="Movie poster called Batman, The Dark Night"',
-    'https://m.media-amazon.com/images/M/MV5BOTUwODM5MTctZjczMi00OTk4LTg3NWUtNmVhMTAzNTNjYjcyXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_QL75_UX380_CR0,16,380,562_.jpg alt="Movie poster called Seven"',
+    'https://m.media-amazon.com/images/M/MV5BOTUwODM5MTctZjczMi00OTk4LTg3NWUtNmVhMTAzNTNjYjcyXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_QL75_UX380_CR0,16,380,562_.jpg alt="Movie poster called Seven"'
 );
 
 // the questions and answers in array.
@@ -38,23 +38,23 @@ myQuestion.push(
 
     `<p class="boxQ">Who is the actor in this moive?</p>
      <p class="box incorrectAns"  onclick="changeColor(this)">Bruce Wills</p>
-     <p class="box correctAns" onclick="changeColor(this)"" >Jim Carey</p>
-     <p class="box incorrectAns" onclick="changeColor(this)"" >Kevin Coster</p>`,
+     <p class="box correctAns" onclick="changeColor(this)" >Jim Carey</p>
+     <p class="box incorrectAns" onclick="changeColor(this)" >Kevin Coster</p>`,
 
     `<p class="boxQ">Who is the director in this moive?</p>
-     <p class="box incorrectAns" onclick="changeColor(this)"" >Mel Gibson</p>
-     <p class="box incorrectAns" onclick="changeColor(this)"" >James Carden</p>
-     <p class="box correctAns"  onclick="changeColor(this)"">Kevin Coster</p>`,
+     <p class="box incorrectAns" onclick="changeColor(this)" >Mel Gibson</p>
+     <p class="box incorrectAns" onclick="changeColor(this)" >James Carden</p>
+     <p class="box correctAns"  onclick="changeColor(this)">Kevin Coster</p>`,
 
     `<p class="boxQ">When was make this film?</p>
-     <p class="box correctAns" onclick="changeColor(this)"" >1988</p>
-     <p class="box incorrectAns" onclick="changeColor(this)"" >1997</p>
-     <p class="box incorrectAns" onclick="changeColor(this)"" >2003</p>`,
+     <p class="box correctAns" onclick="changeColor(this)" >1988</p>
+     <p class="box incorrectAns" onclick="changeColor(this)" >1997</p>
+     <p class="box incorrectAns" onclick="changeColor(this)" >2003</p>`,
 
     `<p class="boxQ">When was make this film?</p>
-     <p class="box incorrectAns"  onclick="changeColor(this)"">1988</p>
-     <p class="box incorrectAns"  onclick="changeColor(this)"">1997</p>
-     <p class="box correctAns"  onclick="changeColor(this)"">2003</p>`,
+     <p class="box incorrectAns"  onclick="changeColor(this)">1988</p>
+     <p class="box incorrectAns"  onclick="changeColor(this)">1997</p>
+     <p class="box correctAns"  onclick="changeColor(this)">2003</p>`
 );
 
 // declare variable for the function
