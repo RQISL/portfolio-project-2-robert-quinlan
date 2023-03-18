@@ -238,12 +238,12 @@ input {
     max-width: 90%;
     height: fit-content;
     font-size: 4em;
+    font-weight: bolder;
     text-align: center;
     background-color: #cbbcb2;
     color: #2d2830;
     margin: 10% auto;
     padding: 2%;
-    border: solid red 3px;
 }
 
 #colorName {
