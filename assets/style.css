@@ -1028,7 +1028,7 @@ footer p {
     }
 
     footer p {
-        font-size: 0.5em;
+        font-size: 1em;
     }
 
     /* Enter username to fill before start game */
@@ -1068,15 +1068,19 @@ footer p {
 @media only screen and (max-width: 375px) {
 
     /* header menu */
+    #headmeun ul {
+        float: left;
+        margin-left: -10px;
+    }
 
     #headmeun li {
-        font-size: 0.8em;
+        font-size: 0.9em;
     }
 
     /* front page btn */
 
     #btnGame a {
-        font-size: 1em;
+        font-size: 1.2em;
     }
 
     /* output image of poster */
@@ -1092,19 +1096,19 @@ footer p {
     }
 
     #numberCounter {
-        font-size: 0.7em;
+        font-size: 1em;
     }
 
     .btn-next {
-        font-size: 0.6em;
+        font-size: 0.8em;
     }
 
     .boxQ {
-        font-size: 0.7em;
+        font-size: 1em;
     }
 
     .box {
-        font-size: 0.7em;
+        font-size: 1em;
     }
 
     /* footer bottom */
@@ -1113,14 +1117,18 @@ footer p {
     }
 
     footer p {
-        font-size: 0.5em;
+        font-size: 1em;
         margin-top: -2%;
     }
 
     /* Enter username to fill before start game */
+    #EnterBox {
+        width: 70%;
+        margin-left: 20px;
+    }
 
     #textHead {
-        font-size: 0.5em;
+        font-size: 0.7em;
     }
 
     input {
@@ -1129,13 +1137,13 @@ footer p {
     }
 
     .btnEnter {
-        font-size: 0.3em;
+        font-size: 0.4em;
     }
 
     /* form */
     .contact-form {
         width: 80%;
-        font-size: 0.7em;
+        font-size: 0.9em;
     }
 
     .text-input {
