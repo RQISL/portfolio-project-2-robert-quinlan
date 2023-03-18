@@ -1,4 +1,8 @@
 
+-------------------------------------------------------------------------------------------------------
+### Please note: I am the first language is ISL (Irish Sign Language). I write in the second English language. I hope you can understand in the ReadMe.
+-------------------------------------------------------------------------------------------------------
+
 ## Concept Project
 
 * The concept project for the movies quiz. The design function is very basically in javascript.
@@ -33,7 +37,7 @@
 * ## I choose some of the color, see picture below:
 ![](assets/Image-for-ReadMe/ChooseColor.png)
 
---------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------
 # Design and development the movie quiz for desktop & mobile devices
 
 ## Logo: Movies Quiz
@@ -95,21 +99,28 @@ Existing Features
 
 ### The lighthouse runs testing and results.
 * there was a quite low performance at the lighthouse. I made add Alt in each image, and also I add to Meta keywords. It went to improve the results as the seen picture below:
+## * Home page
+![]( assets/Image-for-ReadMe/HomePageResult.png)
 
-![]( assets/Image-for-ReadMe/LighthouseResults.png)
+## * Movive Quiz page
+![]( assets/Image-for-ReadMe/MovieQuizPageResult.png)
 
+## * Contact page
+![]( assets/Image-for-ReadMe/ContactPageResult.png)
 
-### Validation testing
+## Validation testing
 
-#### HTML
+### HTML
 * Had been found few errors when the test run through the official W3C validator.
-- Incorrect open and closed by div and nav, and incorrect tag rule, I had to do the fixed bug and it was all pass and no errors.
+- there was an error which tag "<h3>" it does not use it, replaced to <div> I had to do the fixed bug and it was all pass and no errors.
 
-#### CSS
-- Had been found four errors through the official (Jigsaw) validator.
-- Missing px and incorrect %, I had to do the fixed bug and it was all pass and no errors.
+### CSS
+- The official (Jigsaw) validator. It was all passed and no errors.
 
-### Deployment
+### JavaScript
+* The test ran at [Javascript testing](https://jshint.com/)  and there were 24 warnings. I fixed the bugs and reduced the warning; it was all no errors.
+
+# Deployment
 
 The GitHub page where is deployed. How do processing the site deployed as follows:
 
@@ -121,117 +132,55 @@ The GitHub page where is deployed. How do processing the site deployed as follow
 * The Branch under to open to main and root then click to save. 
 * It ran the deployment processing while it is successful.
 
-The site lives at [Michael Collins Legend](https://rqisl.github.io/portfolio-project-1-robert-quinlan/)
+The site lives at [Movie Quiz](https://rqisl.github.io/portfolio-project-2-robert-quinlan/)
 
 ## Credits
 
-I learned through the course in Code Institute. I do most learning of different open source on 3WC it helps to remember what the code used tags and style CSS for HTML and CSS, also what I am interested in as scroll smooth, icons, and transitions. I did a few learning to CodePen. 
+I was nervous to do projects because I had experienced how difficult through javascript where I studied for Multimedia BA degree. I started project 2, I found it was extremely difficult all over again. My concept was before start developing the site and turn out I was not able to full completed. I had spend to learning other resource a lot of time. I tried to understand the javascript but I was disppointed because I could not understand what they have explaining. Cause it was not my first english language. 
 
 My mentor had good feedback and helps to my process improvement on site project. 
 
-## Here is my projects: 
-________________
+## Resouce & tutorial
+* ### I learned as many resources as possible I could.
 
-### Contents
+1) [Ridpidapi video for API to get images of the poster](https://www.youtube.com/watch?v=ytNyibPQFhw) 
+1) [Pick one of the images how to use](https://makersaid.com/array-of-images-in-javascript/)
+1) [Hidden Click](https://www.w3schools.com/css/tryit.asp?filename=trycss_display) 
+1) How can I structure the quiz concept?
+    - [Example quiz 1](https://simplestepscode.com/javascript-quiz-tutorial/)
+    - [Example quiz 2](https://www.youtube.com/watch?v=f4fB9Xg2JEY) 
+1) [Output result](https://codepen.io/yaphi1/pen/NpZvJp)
+1) [How can  I do the question to the next slide](https://www.youtube.com/watch?v=uAAD3mmQGRQ)
+1) [Array through to Code Institute resource](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LMR101+2021_T1/courseware/0a4bf408d10c4149bb686457ac11edf6/9ad9ed6044aa49c0ae12507f3c03aa79/)
+1) [Entry username on the screen through Code Institute](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LMR101+2021_T1/courseware/0a4bf408d10c4149bb686457ac11edf6/16d62f1111064f5cb6a64582da96a41b/?child=last.)
+    - [Example 1](https://youtu.be/Iw6fyph6MNw)
+    - [Example 2](https://youtu.be/KB6Yg5hNrqc)
+    - [Example 3](https://www.youtube.com/watch?v=aEj0Wu33hJM) 
+1) Click highlight
+    - [Example 1](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LMR101+2021_T1/courseware/0a4bf408d10c4149bb686457ac11edf6/fe180c06af614d2f86e32957ae17a859/?child=last) 
+    - [Example 2](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LMR101+2021_T1/courseware/0a4bf408d10c4149bb686457ac11edf6/fe180c06af614d2f86e32957ae17a859/?child=last)
+    - [Example 3](https://stackoverflow.com/questions/39852228/style-backgroundcolor-doesnt-work)
+1) Click highlight remove and active 
+    - [Example 1](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LMR101+2021_T1/courseware/0a4bf408d10c4149bb686457ac11edf6/37e3becd93804fdf8bf586523f56ead5/5?activate_block_id=block-v1%3ACodeInstitute%2BLMR101%2B2021_T1%2Btype%40html%2Bblock%404b2504c0ab4e40d6b42d4b527776707a)
+    - [Example 2](https://softauthor.com/make-selected-clicked-button-active-in-javascript/)
+1) [Output HTML in javascript](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LMR101+2021_T1/courseware/0a4bf408d10c4149bb686457ac11edf6/37e3becd93804fdf8bf586523f56ead5/) 
+1) [Overlay 3 W School](https://www.w3schools.com/howto/howto_css_overlay.asp)
+1) For loop
+    - [Example 1](https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_onclick)
+    - [Example 2](https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_foreach)
+    - [Example 3](https://www.freecodecamp.org/news/javascript-foreach-js-array-for-each-example/amp/)
+    - [Example 3](https://www.freecodecamp.org/news/javascript-foreach-js-array-for-each-example/amp/)
 
-* I was interested in the active current on the section page. I took the jQuery, it comes from [CodePen.](https://codepen.io/arjunamgain/pen/RwWoQM)  
+## Adobe Photoshop & Illustrate
 
-### Favicon 
-* I use previous website which is now not on the server anymore. I copied the folder here and replace the icon image through photoshop. 
+* The logo images where I created the Photoshop. I downloaded the image comes from [www.vecteezy.com](https://www.vecteezy.com/vector-art/19115573-creative-business-card-and-logo-template-album-film-movie-reel-vector-illustration). It is free licence. I choose a roll movie image and edited to create a logo where I used Adobe Illustrate. 
+* The layout movie poster on the front page which comes from [www.wallpaperflare.com/](www.wallpaperflare.com/), It is free to allow download who wish to use wallpaper on the usernames' desktop, laptop, tablet or mobile.
+* I downloaded three movie posters:
+    - [Matrix](https://www.wallpaperflare.com/the-matrix-poster-movies-neo-keanu-reeves-morpheus-carrie-anne-moss-wallpaper-mjcss/download/1920x1200)
+    - [Avengers](https://www.wallpaperflare.com/marvel-avengers-the-avengers-avengers-age-of-ultron-thor-wallpaper-zkw/download/1920x1200)
+    - [Spiderman](https://www.wallpaperflare.com/spider-man-movies-spider-man-3-marvel-comics-black-suited-spiderman-wallpaper-pnkas/download/1920x1200)
+* I made an overlapping layout of the movie posters where I used Adobe PhotoShop 
 
-See the imagthe e iconthe  on the head of the site
-![](assets/images/ReadMe-image/Icon.png)
+## Concluded 
 
-
-### Social media icons
-
-* I took the social media icon from the [3CWhool.](https://www.freepiimageree-vector/social-media-logo-collection_3966112.htm#query=social%20media%20icon&position=7&from_view=keyword) 
-
-### Specifies size screen for responsive
-* I searched and icon the link [Screen size responsive,](https://screensiz.es/monitor) it helps me to know the exact screen size from Desktop, laptop, tablet and mobile devices for the queries media responsiveness.
-
-* I use MacBook pro laptop with a 17” screen and it is very hard to know approx for a large desktop screen. I had experienced difficulty knowing the exact screen size. 
-
-### What I did using queries media list in the CSS.
-
-``` markdown
-/*Desktop responsive*/
-@media only screen and (max-width: 2070px) {…………}
-```
-
-``` markdown
- /* large tablet and small laptop responsive*/
- @media only screen and (max-width: 1354px)  {…………}
-```
-
-``` markdown
-/*tablet responsive from 650px up to 950px) */
- @media only screen and (max-width: 950px)  {…………}
-```
-
-``` markdown
-/* large mobile, from 450px up to 750px */
-@media only screen and (max-width: 750px) {…………}
-```
-
-``` markdown
-/* mobile standard responsiveness  for max 450px screen*/
-@media only screen and (max-width: 450px)  {…………}
-```
-
-``` markdown
- /* small mobile responsiveness  for max 350px screen*/
- @media only screen and (max-width: 350px) {…………}
-```
-
-``` markdown
-/* smaller mobile  responsiveness */
-@media only screen and (max-width: 320px)  {…………}
-```
-
-### The dash button icon
-
-* I took an icon dash button from [3WC School.](https://www.w3schools.com/howto/howto_css_icon_buttons.asp)
-
-### Timeline 
-
-* I did create my own CSS for the timeline history. I had experienced difficulty with a responsive timeline. I decide to copy from [3WC School for the timeline](https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_timeline) and I had a few modifications to make the position fit the screen and also responsiveness. The reason is to prevent my time delay. 
-
-
-### Media
-
-* All the images come from Michael Collins’s Wikimedia and are free to share and link the images and embed a file from Wikimedia. It is in the public domain.
-
-* I like the two images on my site of the project. The mentor pointed out the rights of the images  who are holders' rights. I was concerned about the images, I asked one of the Cohort Facilitators. He instructed me to use a reference and give an example:
-
-``` markdown
-Creator, Year. Title [Online]. Place of publication: Publisher (if known). Available from: URL [Accessed date].
-
-e.g. NASA, 2015. NASA astronaut Tim Kopra on Dec. 21 spacewalk [Online]. Washington: NASA. Available from: https://www.nasa.gov/image-feature/nasa-astronaut-tim-kopra-on-dec-21-spacewalk [Accessed 7 January 2015].
-```
-
-### Detailed references:
-
-The references holders' images details are: 
-
-* Leo Whelan (10 January 1892 – 6 November 1956
-), Fine Art Painting,  Available from: https://www.historyireland.com/michael-collins-military-dictator/  [Accessed 12 December 2023].
-
-* Janice O Connell f22 Photography,  Available from: <https://www.google.com/search?q=michael+collins+house+cork&tbm=isch#imgrc=OcxaVe7zvb0x1M>  to Facebook page [Accessed 12 December 2023].
-
-
-### Adobe Photoshop
-
-* The logo of Michael’s head silhouette images where I created the Photoshop. Also, Michael’s head on the Doric image which is downloaded comes from [www.vecteezy.com](https://www.vecteezy.com/vector-art/11014285-museums-museum-columns-museum-lines-museum-pillar-logos-museums-with-minimalist-and-modern-concepts-logos-can-be-used-for-companies-museums-and-businesses) to editing together Michael’s head silhouette and Doric.
-
-### Photoshop images
-
-### Logo 
-![]( assets/images/ReadMe-image/Michael-Collins-Logo.jpg)
-
-### Michael's head sillhoette and Droic together image
-![]( assets/images/ReadMe-image/Head-Gold_White-Doric-small.jpg)
-
-### Concluded 
-
-* I completed my concept project for the Michael Collins Legend’s website and included responsiveness. I hope you enjoy my project on the Michael Collins Legend site. The site lives [Michael Collins Legend](https://rqisl.github.io/portfolio-project-1-robert-quinlan/).
+* I completed my concept project for the Movie Quiz. I created very basic on javascript. The site lives [Movie Quiz](https://rqisl.github.io/portfolio-project-2-robert-quinlan/).
