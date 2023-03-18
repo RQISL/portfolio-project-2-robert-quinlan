@@ -1,6 +1,6 @@
 
 -------------------------------------------------------------------------------------------------------
-### Please note: I am the first language is ISL (Irish Sign Language). I write in the second English language. I hope you can understand in the ReadMe.
+### Please note: I am the first language is ISL (Irish Sign Language). I write in the second English language. I hope you read and understand the ReadMe.
 -------------------------------------------------------------------------------------------------------
 
 ## Concept Project
@@ -64,6 +64,7 @@ Existing Features
 ![]( assets/Image-for-ReadMe/frontPage.png)
 
 ### Entry Username for the Movie Quiz page
+
 * Either click to Play Game button or Movie Quiz on the menu page,
 *Then first fill in the username, if you don't fill in the name and it won't enter the game until you fill in the username then it will be able to enter the quiz. See the picture below:
 
@@ -77,10 +78,10 @@ Existing Features
 ### Select the answer to the question on the movie quiz page
 
 * To roll up the demand of the screen screen
-* There is a button _**`Next`**_   to the next quest up to 4 question
-* When you clcik onto the answer and it will be display red or green highligh which it is either right or wrong the answers. See a couple of pictures to show either right or wrong answers
+* There is a button _**`Next`**_   to the next up to 4 questions
+* When you clcik onto the answer and it will be display red or green highligh which it is either right or wrong the answers and at to end of the quiz, it is pop an up screen to ask would you like to play again, there is either yes or no, if yes back to movie quiz and go back to home page. See three pictures
 
-![]( assets/Image-for-ReadMe/RightAnswers.png) ![](assets/Image-for-ReadMe/WrongAnswers.png)
+![]( assets/Image-for-ReadMe/RightAnswers.png) ![](assets/Image-for-ReadMe/WrongAnswers.png) ![](assets/Image-for-ReadMe/GameOver.png)
 
 ### Contact page
 
@@ -112,7 +113,7 @@ Existing Features
 
 ### HTML
 * Had been found few errors when the test run through the official W3C validator.
-- there was an error which tag "<h3>" it does not use it, replaced to <div> I had to do the fixed bug and it was all pass and no errors.
+- there was an error which tag  `<h3>` it does not use it, replaced to ` <div>`  I had to do the fixed bug and it was all pass and no errors.
 
 ### CSS
 - The official (Jigsaw) validator. It was all passed and no errors.
@@ -136,12 +137,12 @@ The site lives at [Movie Quiz](https://rqisl.github.io/portfolio-project-2-rober
 
 ## Credits
 
-I was nervous to do projects because I had experienced how difficult through javascript where I studied for Multimedia BA degree. I started project 2, I found it was extremely difficult all over again. My concept was before start developing the site and turn out I was not able to full completed. I had spend to learning other resource a lot of time. I tried to understand the javascript but I was disppointed because I could not understand what they have explaining. Cause it was not my first english language. 
+I was nervous to do projects because I had experienced how difficult through javascript where I studied for Multimedia BA degree. I started project 2, I found it was extremely difficult all over again. My concept was before start developing the site and turn out I was not able to full completed which are get result, age group and time up game. I had spend to learning other resource a lot of time. I tried to understand the javascript but I was disppointed because I could not understand what they have explaining. Cause it was not my first English language. 
 
-My mentor had good feedback and helps to my process improvement on site project. 
+My mentor had good feedback and helps with my process improvement on site project. 
 
 ## Resouce & tutorial
-* ### I learned as many resources as possible I could.
+* ### I learned as many resources as possible I could learn.
 
 1) [Ridpidapi video for API to get images of the poster](https://www.youtube.com/watch?v=ytNyibPQFhw) 
 1) [Pick one of the images how to use](https://makersaid.com/array-of-images-in-javascript/)

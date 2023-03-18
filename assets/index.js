@@ -37,39 +37,43 @@ let myQuestion = [];
 myQuestion.push(
 
     `<p class="boxQ">Who is the actor in this moive?</p>
-     <p class="box incorrectAns"  onclick="changeColor(this)">Bruce Wills</p>
-     <p class="box correctAns" onclick="changeColor(this)" >Jim Carey</p>
-     <p class="box incorrectAns" onclick="changeColor(this)" >Kevin Coster</p>`,
+     <p class="box incorrectAns"  onclick="answer_Right_or_Wrong(this)">Bruce Wills</p>
+     <p class="box correctAns" onclick="answer_Right_or_Wrong(this)" >Jim Carey</p>
+     <p class="box incorrectAns" onclick="answer_Right_or_Wrong(this)" >Kevin Coster</p>`,
 
     `<p class="boxQ">Who is the director in this moive?</p>
-     <p class="box incorrectAns" onclick="changeColor(this)" >Mel Gibson</p>
-     <p class="box incorrectAns" onclick="changeColor(this)" >James Carden</p>
-     <p class="box correctAns"  onclick="changeColor(this)">Kevin Coster</p>`,
+     <p class="box incorrectAns" onclick="answer_Right_or_Wrong(this)" >Mel Gibson</p>
+     <p class="box incorrectAns" onclick="answer_Right_or_Wrong(this)" >James Carden</p>
+     <p class="box correctAns"  onclick="answer_Right_or_Wrong(this)">Kevin Coster</p>`,
 
     `<p class="boxQ">When was make this film?</p>
-     <p class="box correctAns" onclick="changeColor(this)" >1988</p>
-     <p class="box incorrectAns" onclick="changeColor(this)" >1997</p>
-     <p class="box incorrectAns" onclick="changeColor(this)" >2003</p>`,
+     <p class="box correctAns" onclick="answer_Right_or_Wrong(this)" >1988</p>
+     <p class="box incorrectAns" onclick="answer_Right_or_Wrong(this)" >1997</p>
+     <p class="box incorrectAns" onclick="answer_Right_or_Wrong(this)" >2003</p>`,
 
     `<p class="boxQ">When was make this film?</p>
-     <p class="box incorrectAns"  onclick="changeColor(this)">1988</p>
-     <p class="box incorrectAns"  onclick="changeColor(this)">1997</p>
-     <p class="box correctAns"  onclick="changeColor(this)">2003</p>`
+     <p class="box incorrectAns"  onclick="answer_Right_or_Wrong(this)">1988</p>
+     <p class="box incorrectAns"  onclick="answer_Right_or_Wrong(this)">1997</p>
+     <p class="box correctAns"  onclick="answer_Right_or_Wrong(this)">2003</p>`,
+
 );
 
 // declare variable for the function
 const firstImg = 0;
-const lastImg = arrayOfImages.length - 1;
+const lastImg = arrayOfImages.length;
 let currentImg = 0;
 let poster = document.getElementsByClassName('poster')[0];
 let questions = 0;
 
 // declared variable for the button click next the slides
 const nextBtn = document.getElementById('btnNext');
+let showUp = document.getElementById('GameAgain').style.display = "none";
 nextBtn.addEventListener('click', () => {
     currentImg++;
     if (currentImg >= lastImg) {
-        currentImg = lastImg;
+        currentImg = lastImg; // hit to last number of 4
+        nextBtn.disabled = lastImg; // clcik is stop when reach to 4
+        showUp = document.getElementById('GameAgain').style.display = "block";
     }
     poster.src = arrayOfImages[currentImg];
     document.getElementById('numberCounter').innerHTML = (currentImg + 1) + '/4';
@@ -77,21 +81,7 @@ nextBtn.addEventListener('click', () => {
 });
 
 // select the answer to make highlight background color.
-let rightAns = document.getElementsByClassName('correctAns');
-
-function changeColor(cell) {
-    // adds or removes the active class 
-    cell.classList.toggle("active");
+function answer_Right_or_Wrong(Ans) {
+    Ans.classList.toggle("active");
 }
 
-//let getAnswers = document.getElementById('results').style.visibility = "hidden";
-// let clickAnsBtn = document.getElementById('getAnswer');
-
-// function resultanswer() {
-//     getAnswers = document.getElementById('results').style.visibility = "visible";
-// }
-// clickAnsBtn.addEventListener('click', resultanswer);
-
-
-
-// console.log(ans, "pick one ans");

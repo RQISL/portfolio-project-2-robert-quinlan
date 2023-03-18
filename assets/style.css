@@ -6,7 +6,7 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-/* Hearder logo and meun */
+/* Header logo and meun */
 
 #logo img {
     width: 25%;
@@ -101,7 +101,7 @@ body {
     font-size: 2em;
     text-align: center;
     background-color: #2d2830;
-    color: aliceblue;
+    color: #cbbcb2;
     padding: 20px;
     margin-top: 5%;
     cursor: pointer;
@@ -207,6 +207,7 @@ input {
     padding: 10px 15px 10px 15px;
     font-size: 2.5em;
     margin: 0 20px 0 20px;
+    cursor: pointer;
 }
 
 #questions {
@@ -256,6 +257,66 @@ input {
 
 .correctAns.active {
     background-color: greenyellow;
+}
+
+/* Pop up and ask for play again and option yes or no */
+#GameAgain {
+    background-color: #545a6b;
+    width: 100%;
+    margin: 0 0 0 -6px;
+    z-index: 2;
+    position: fixed;
+}
+
+#EndScreen {
+    width: 60%;
+    height: 60%;
+    margin: 20% auto;
+    background-color: #c6978b;
+    padding-top: 5%;
+
+}
+
+#EndScreen p.BG {
+    background-color: #2d2830;
+    color: #cbbcb2;
+    width: 60%;
+    padding: 2%;
+    margin: auto;
+}
+
+#EndScreen p {
+    text-align: center;
+    font-size: 2.5em;
+    color: #2d2830;
+    padding-top: 5%;
+    font-weight: bolder;
+}
+
+.btnNY {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 40%;
+    height: 80px;
+    padding: 1%;
+    margin: 0 auto;
+}
+
+.btnNY a {
+    width: 35%;
+    height: 40px;
+    padding: 5%;
+    background-color: #2d2830;
+    color: #cbbcb2;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    font-size: 2em;
+}
+
+.btnNY a:hover {
+    background-color: #545a6b;
 }
 
 /* form */
@@ -531,6 +592,10 @@ footer p {
         height: 120px;
     }
 
+    #headmeun ul {
+        margin-top: -3.5%;
+    }
+
     /* front page of the movie images layout  and button*/
 
     #btnGame a {
@@ -637,6 +702,15 @@ footer p {
         font-size: 2em;
     }
 
+    /* Pop up end game */
+    #EndScreen p {
+        font-size: 2em;
+    }
+
+    .btnNY a {
+        font-size: 1.5em;
+    }
+
     /* footer bottom */
     footer {
         height: 40px;
@@ -722,6 +796,19 @@ footer p {
         font-size: 2em;
     }
 
+    /* Pop up end game */
+    #GameAgain {
+        margin: 150px 0 0 -8px;
+    }
+
+    #EndScreen p {
+        font-size: 1.5em;
+    }
+
+    .btnNY a {
+        font-size: 1.2em;
+    }
+
     /* footer bottom */
     footer {
         height: 40px;
@@ -770,6 +857,10 @@ footer p {
     #logo img {
         width: 30%;
         margin: 20px 0 0 20px;
+    }
+
+    #headmeun ul {
+        margin-top: -4.5%;
     }
 
     /* front page of the movie images layout */
@@ -908,6 +999,21 @@ footer p {
         font-size: 1.5em;
     }
 
+    /* Pop up end game */
+
+    #EndScreen {
+        width: 80%;
+    }
+
+    #EndScreen p {
+        font-size: 1.5em;
+    }
+
+    .btnNY a {
+        font-size: 1.2em;
+    }
+
+
     /* footer bottom */
     footer {
         height: 20px;
@@ -1025,6 +1131,27 @@ footer p {
         font-size: 1em;
     }
 
+    /* Pop up end game */
+    #EndScreen {
+        width: 90%;
+    }
+
+    #EndScreen p {
+        font-size: 1.2em;
+    }
+
+    .btnNY {
+        width: 60%;
+    }
+
+    .btnNY a {
+        font-size: 1.1em;
+        padding: 0.5%;
+        width: 60%;
+        margin-right: 5%;
+    }
+
+
     /* footer bottom */
     footer {
         height: 15px;
@@ -1113,6 +1240,20 @@ footer p {
 
     .box {
         font-size: 1em;
+    }
+
+    /* Pop up end game */
+
+    #EndScreen {
+        width: 80%;
+    }
+
+    #EndScreen p {
+        font-size: 1.5em;
+    }
+
+    .btnNY a {
+        font-size: 1.2em;
     }
 
     /* footer bottom */
