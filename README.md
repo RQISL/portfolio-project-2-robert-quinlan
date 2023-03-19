@@ -60,14 +60,14 @@ Existing Features
 
 ### Home page
 * Display on the front image layout page
-* The image below the button to enter play game or there is either on top of the menu 'movie quiz".
+* The image below the button to enter play game or there is either on top of the menu 'movie quiz'.
 
 ![]( assets/Image-for-ReadMe/frontPage.png)
 
 ### Entry Username for the Movie Quiz page
 
 * Either click to Play Game button or Movie Quiz on the menu page,
-*Then first fill in the username, if you don't fill in the name and it won't enter the game until you fill in the username then it will be able to enter the quiz. See the picture below:
+* Then first fill in the username, if you don't fill in the name and it won't enter the game until you fill in the username then it will be able to enter the quiz. See the picture below:
 
 ![](assets/Image-for-ReadMe/FilledUsername.png)
 
@@ -102,13 +102,13 @@ Existing Features
 
 ### The lighthouse runs testing and results.
 * there was a quite low performance at the lighthouse. I made add Alt in each image, and also I add to Meta keywords. It went to improve the results as the seen picture below:
-## * Home page
+* ## Home page
 ![]( assets/Image-for-ReadMe/HomePageResult.png)
 
-## * Movive Quiz page
+* ## Movive Quiz page
 ![]( assets/Image-for-ReadMe/MovieQuizPageResult.png)
 
-## * Contact page
+* ## Contact page
 ![]( assets/Image-for-ReadMe/ContactPageResult.png)
 
 ## Validation testing
