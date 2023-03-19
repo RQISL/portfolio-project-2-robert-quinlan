@@ -80,7 +80,7 @@ nextBtn.addEventListener('click', () => {
     questions = document.getElementById('questions').innerHTML = myQuestion[currentImg];
 });
 
-// select the answer to make highlight background color.
+// select the answer to make highlight background color for correct or incorrect.
 function answer_Right_or_Wrong(Ans) {
     Ans.classList.toggle("active");
 }

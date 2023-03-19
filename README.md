@@ -55,6 +55,7 @@ Existing Features
 ### Navigation Bar
 
 * The header menu are three pages which are Home, Movie Quiz and Contact.
+
 ![](assets/Image-for-ReadMe/MenuDesktop.png)
 
 ### Home page
@@ -77,11 +78,12 @@ Existing Features
 
 ### Select the answer to the question on the movie quiz page
 
-* To roll up the demand of the screen screen
+* To roll up the demand for the screen
 * There is a button _**`Next`**_   to the next up to 4 questions
-* When you clcik onto the answer and it will be display red or green highligh which it is either right or wrong the answers and at to end of the quiz, it is pop an up screen to ask would you like to play again, there is either yes or no, if yes back to movie quiz and go back to home page. See three pictures
+* There is a roll hover highlight background colour
+* When you click on the answer and it will display a red or green highlight which is either right or wrong the answers and at the top end of the quiz, it is pop an up screen to ask if would you like to play again, there is either yes or no, if yes back to movie quiz and go back to home page. See three pictures
 
-![]( assets/Image-for-ReadMe/RightAnswers.png) ![](assets/Image-for-ReadMe/WrongAnswers.png) ![](assets/Image-for-ReadMe/GameOver.png)
+![](assets/Image-for-ReadMe/Moviequiz1.png) ![]( assets/Image-for-ReadMe/CorrctAnswers.png) ![](assets/Image-for-ReadMe/incorrectAnswer.png) ![](assets/Image-for-ReadMe/GameOver.png)
 
 ### Contact page
 
