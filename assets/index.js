@@ -51,7 +51,7 @@ myQuestion.push(
      <p class="box incorrectAns" onclick="answer_Right_or_Wrong(this)" >David Fincher</p>
      <p class="box incorrectAns" onclick="answer_Right_or_Wrong(this)" >Francis Ford Coppola</p>`,
 
-    `<p class="boxQ">When was the relase this film?</p>
+    `<p class="boxQ">When was the release this film?</p>
      <p class="box incorrectAns"  onclick="answer_Right_or_Wrong(this)">2008</p>
      <p class="box correctAns"  onclick="answer_Right_or_Wrong(this)">1995</p>
      <p class="box incorrectAns"  onclick="answer_Right_or_Wrong(this)">1994</p>`,
