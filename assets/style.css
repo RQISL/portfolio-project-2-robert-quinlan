@@ -889,21 +889,12 @@ footer p {
         font-size: 1.5em;
     }
 
-    /* footer bottom */
-    footer {
-        height: 20px;
-    }
-
-    footer p {
-        font-size: 1em;
-    }
-
     /* Enter username to fill before start game */
 
     #EnterBox {
-        width: 55%;
+        width: 65%;
         padding: 8%;
-        margin: 40% auto 50%;
+        margin: 14% auto 50%;
     }
 
     #textHead {
@@ -917,6 +908,28 @@ footer p {
 
     .btnEnter {
         font-size: 0.5em;
+    }
+
+    /* Pop up end game */
+    #GameAgain {
+        margin: 0 0 0 -8px;
+    }
+
+    #EndScreen p {
+        font-size: 1.5em;
+    }
+
+    .btnNY a {
+        font-size: 1.2em;
+    }
+
+    /* footer bottom */
+    footer {
+        height: 20px;
+    }
+
+    footer p {
+        font-size: 1em;
     }
 
     /* form */
@@ -1243,17 +1256,21 @@ footer p {
     }
 
     /* Pop up end game */
+    #GameAgain {
+        margin-top: 20%;
+        padding-top: 10%;
+    }
 
     #EndScreen {
         width: 80%;
     }
 
     #EndScreen p {
-        font-size: 1.5em;
+        font-size: 1.1em;
     }
 
     .btnNY a {
-        font-size: 1.2em;
+        font-size: 1.1em;
     }
 
     /* footer bottom */
@@ -1263,6 +1280,93 @@ footer p {
 
     footer p {
         font-size: 1em;
+        margin-top: -2%;
+    }
+
+    /* Enter username to fill before start game */
+    #EnterBox {
+        width: 70%;
+        margin-left: 20px;
+    }
+
+    #textHead {
+        font-size: 0.7em;
+    }
+
+    input {
+        font-size: 0.4em;
+        height: 35px;
+    }
+
+    .btnEnter {
+        font-size: 0.4em;
+    }
+
+    /* form */
+    .contact-form {
+        width: 80%;
+        font-size: 0.9em;
+    }
+
+    .text-input {
+        height: 20px;
+        margin-bottom: 5px;
+    }
+}
+
+/* screen mobile devices  ( 320 x 568) */
+@media only screen and (max-width: 350px) {
+    #headmeun #logo img{
+        width: 50%;
+        margin-left: 25%;
+    }
+    #headmeun li {
+        font-size: 0.9em;
+        margin-left: -6%;
+    }
+
+    /* Enter username to fill before start game */
+    #EnterBox {
+        width: 70%;
+    }
+
+    #textHead {
+        font-size: 0.7em;
+    }
+
+    input {
+        font-size: 0.4em;
+        height: 35px;
+    }
+
+    .btnEnter {
+        font-size: 0.4em;
+    }
+
+    /* Pop up end game */
+    #GameAgain {
+        margin-top: 20%;
+    }
+
+    #EndScreen {
+        width: 80%;
+    }
+
+    #EndScreen p {
+        font-size: 1em;
+    }
+
+    .btnNY a {
+        font-size: 1em;
+    }
+
+    /* footer bottom */
+    footer {
+        height: 2px;
+    }
+
+    footer p {
+        font-size: 0.7em;
         margin-top: -2%;
     }
 

@@ -36,25 +36,25 @@ arrayOfImages.push(
 let myQuestion = [];
 myQuestion.push(
 
-    `<p class="boxQ">Who is the actor in this moive?</p>
-     <p class="box incorrectAns"  onclick="answer_Right_or_Wrong(this)">Bruce Wills</p>
-     <p class="box correctAns" onclick="answer_Right_or_Wrong(this)" >Jim Carey</p>
-     <p class="box incorrectAns" onclick="answer_Right_or_Wrong(this)" >Kevin Coster</p>`,
+    ` <p class="boxQ">Who was writer screenplay?</p>
+            <p class="box incorrectAns" onclick="answer_Right_or_Wrong(this)">Francis Ford Coppola</p>
+            <p class="box correctAns" onclick="answer_Right_or_Wrong(this)">Frank Darabont</p>
+            <p class="box incorrectAns" onclick="answer_Right_or_Wrong(this)">Jonathan Nolan</p>`,
 
-    `<p class="boxQ">Who is the director in this moive?</p>
-     <p class="box incorrectAns" onclick="answer_Right_or_Wrong(this)" >Mel Gibson</p>
-     <p class="box incorrectAns" onclick="answer_Right_or_Wrong(this)" >James Carden</p>
-     <p class="box correctAns"  onclick="answer_Right_or_Wrong(this)">Kevin Coster</p>`,
+    `<p class="boxQ">Who was in the actor?</p>
+     <p class="box incorrectAns" onclick="answer_Right_or_Wrong(this)" >Morgan Freeman</p>
+     <p class="box incorrectAns" onclick="answer_Right_or_Wrong(this)" >Tim Robbins</p>
+     <p class="box correctAns"  onclick="answer_Right_or_Wrong(this)">Marlon Brando</p>`,
 
-    `<p class="boxQ">When was make this film?</p>
-     <p class="box correctAns" onclick="answer_Right_or_Wrong(this)" >1988</p>
-     <p class="box incorrectAns" onclick="answer_Right_or_Wrong(this)" >1997</p>
-     <p class="box incorrectAns" onclick="answer_Right_or_Wrong(this)" >2003</p>`,
+    `<p class="boxQ">Who was the director in this film?</p>
+     <p class="box correctAns" onclick="answer_Right_or_Wrong(this)" >Christopher Nolan</p>
+     <p class="box incorrectAns" onclick="answer_Right_or_Wrong(this)" >David Fincher</p>
+     <p class="box incorrectAns" onclick="answer_Right_or_Wrong(this)" >Francis Ford Coppola</p>`,
 
-    `<p class="boxQ">When was make this film?</p>
-     <p class="box incorrectAns"  onclick="answer_Right_or_Wrong(this)">1988</p>
-     <p class="box incorrectAns"  onclick="answer_Right_or_Wrong(this)">1997</p>
-     <p class="box correctAns"  onclick="answer_Right_or_Wrong(this)">2003</p>`,
+    `<p class="boxQ">When was the relase this film?</p>
+     <p class="box incorrectAns"  onclick="answer_Right_or_Wrong(this)">2008</p>
+     <p class="box correctAns"  onclick="answer_Right_or_Wrong(this)">1995</p>
+     <p class="box incorrectAns"  onclick="answer_Right_or_Wrong(this)">1994</p>`,
 
 );
 
