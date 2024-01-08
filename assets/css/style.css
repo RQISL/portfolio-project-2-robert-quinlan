@@ -208,12 +208,15 @@ h1{
 
 /* Moves Quiz game page */
 
-.images {
-  width: 600px;
-  height: 600px;
-  margin-top: 200px;
+.images img {
+  width: 400px;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
   border: solid red 5px;
 }
+
 .choice-container {
     display: flex;
     margin-bottom: 0.5rem;

@@ -8,6 +8,7 @@ let acceptingAnswers = false;
 let score = 0;
 let questionCounter = 0;
 let availableQuesions = [];
+let imageMovies = [];
 
 
 // movie game javascript
@@ -21,18 +22,16 @@ fetch(
   
   .then((loadedQuestions) => {
     
-      poster = loadedQuestions.results.map((moviePoster) => {
+      posters = loadedQuestions.results.map((moviePoster) => {
         
-        const imageMovie = {image: moviePoster.image.imageUrl};
-        const posters =`<img src="${imageMovie}">`;
+        const imageMovie = moviePoster.image;
+        const poster =`<img src="${imageMovie}">`;
         
-        document.querySelector(".images").innerHTML = posters;
-
-        
-      })
-
+        document.querySelector(".images").innerHTML = poster;
+       });
 
       questions = loadedQuestions.results.map((loadedQuestion) => {
+          
           const formattedQuestion = {
               question: loadedQuestion.question,
           };
@@ -40,8 +39,7 @@ fetch(
           const answerChoices = [...loadedQuestion.incorrect_answers];
           formattedQuestion.answer = Math.floor(Math.random() * 4) + 1;
           answerChoices.splice(
-              formattedQuestion.answer - 1,
-              0,
+              formattedQuestion.answer - 1, 0,
               loadedQuestion.correct_answer
           );
 
@@ -51,7 +49,9 @@ fetch(
 
           return formattedQuestion;
       });
+
       startGame();
+     
   })
   .catch((err) => {
       console.error(err);
@@ -59,12 +59,13 @@ fetch(
 
 //CONSTANTS
 const CORRECT_BONUS = 10;
-const MAX_QUESTIONS = 3;
+const MAX_QUESTIONS = 5;
 
 startGame = () => {
   questionCounter = 0;
   score = 0;
   availableQuesions = [...questions];
+  imageMovies = [...posters];
   getNewQuestion();
 };
 
