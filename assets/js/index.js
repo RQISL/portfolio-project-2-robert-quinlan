@@ -24,14 +24,6 @@ fetch(
   
   .then((loadedQuestions) => {
     
-      // posters = loadedQuestions.results.map((moviePoster) => {
-        
-      //     const imageMovie = moviePoster.image
-      //     const poster =`<img src="${imageMovie}">`;
-          
-      //     document.querySelector(".images").innerHTML = poster;
-      //    });
-       
       questions = loadedQuestions.results.map((loadedQuestion) => {
           
           const formattedQuestion = {
@@ -77,7 +69,7 @@ getNewQuestion = () => {
   if (availableQuesions.length === 0 || questionCounter >= MAX_QUESTIONS) {
     localStorage.setItem("mostRecentScore", score);
     //go to the end page
-    return window.location.assign("/gameover.html");
+    return window.location.assign("gameover.html");
   }
   questionCounter++;
   questionCounterText.innerText = `${questionCounter}/${MAX_QUESTIONS}`;
