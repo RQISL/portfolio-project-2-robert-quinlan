@@ -240,6 +240,8 @@ h1{
 
   .choice-text {
     padding: 1.5rem;
+    cursor: pointer;
+    
   }
   
   /* Select highligh color red or green for correct or incorrect */
