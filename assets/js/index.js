@@ -1,14 +1,16 @@
 const question = document.getElementById("question");
+const questImg = document.querySelector(".images > img")
 const choices = Array.from(document.getElementsByClassName("choice-text"));
 const questionCounterText = document.getElementById("questionCounter");
 const scoreText = document.getElementById("score");
 
 let currentQuestion = {};
+let currentImg = 0;
 let acceptingAnswers = false;
 let score = 0;
 let questionCounter = 0;
 let availableQuesions = [];
-let imageMovies = [];
+let imgIndex = [];
 
 
 // movie game javascript
@@ -22,18 +24,19 @@ fetch(
   
   .then((loadedQuestions) => {
     
-      posters = loadedQuestions.results.map((moviePoster) => {
+      // posters = loadedQuestions.results.map((moviePoster) => {
         
-        const imageMovie = moviePoster.image;
-        const poster =`<img src="${imageMovie}">`;
-        
-        document.querySelector(".images").innerHTML = poster;
-       });
-
+      //     const imageMovie = moviePoster.image
+      //     const poster =`<img src="${imageMovie}">`;
+          
+      //     document.querySelector(".images").innerHTML = poster;
+      //    });
+       
       questions = loadedQuestions.results.map((loadedQuestion) => {
           
           const formattedQuestion = {
-              question: loadedQuestion.question,
+            image: loadedQuestion.image,
+            question: loadedQuestion.question,
           };
 
           const answerChoices = [...loadedQuestion.incorrect_answers];
@@ -46,10 +49,10 @@ fetch(
           answerChoices.forEach((choice, index) => {
               formattedQuestion['choice' + (index + 1)] = choice;
           });
-
+          console.log(formattedQuestion)
           return formattedQuestion;
       });
-
+     
       startGame();
      
   })
@@ -65,12 +68,12 @@ startGame = () => {
   questionCounter = 0;
   score = 0;
   availableQuesions = [...questions];
-  imageMovies = [...posters];
   getNewQuestion();
 };
 
 
 getNewQuestion = () => {
+
   if (availableQuesions.length === 0 || questionCounter >= MAX_QUESTIONS) {
     localStorage.setItem("mostRecentScore", score);
     //go to the end page
@@ -80,9 +83,12 @@ getNewQuestion = () => {
   questionCounterText.innerText = `${questionCounter}/${MAX_QUESTIONS}`;
 
   const questionIndex = Math.floor(Math.random() * availableQuesions.length);
+  
+  console.log(Math.floor(Math.random() * availableQuesions.length), "this is array")
   currentQuestion = availableQuesions[questionIndex];
   question.innerText = currentQuestion.question;
-
+  questImg.src = currentQuestion.image;
+ 
   choices.forEach(choice => {
     const number = choice.dataset["number"];
     choice.innerText = currentQuestion["choice" + number];
