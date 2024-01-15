@@ -4,8 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+     <!-- SEO -->
     <meta name="description" content="Movie Quiz, Home page">
     <meta name="keywords" content="Movie Quiz, Home page">
+    <!-- Allow use images url from Pinterest which I use access login and copy image url
+    into question.json file -->
+    <meta name="p:domain_verify" content="7e9d460e475e6e94c13ec6cf299fb573"/>
 
     <!-- Font google "Roboto" -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,8 +25,8 @@
      <!-- header menupage -->
      <header>
         <div id="headmeun">
-            <div id="logo"><img src="assets/images/MovieQuizLogo.png"
-                    alt="The logo design as roll movie and head of name 'Movie Quiz'"></div>
+            <div id="logo"><a href="index.html"><img src="assets/images/MovieQuizLogo.png"
+                    alt="The logo design as roll movie and head of name 'Movie Quiz'"></a></div>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="moviesquiz.html">Movie Quiz</a></li>
@@ -35,7 +39,7 @@
     <div class="container">
         <div id="home" class="flex-center flex-column">
           <h1>Movies Quiz</h1>
-           <img src="assets/images/LayoutMoviePoster.png"
+           <img src="assets/images/LayoutMoviePoster_small.png"
                 alt="Layout movie poster with The Matrix, Avenagers and The Spiderman between two spiderman on the window side as mirror opposite bad spiderman">
           <a class="btn" href="/moviesquiz.html">Play</a>
           <a class="btn" href="/highscores.html">High Scores</a>
