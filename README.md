@@ -134,7 +134,7 @@ The site lives at [Movie Quiz](https://rqisl.github.io/portfolio-project-2-rober
 
 ## Credits
 
-I was nervous to do projects because I had experienced how difficult through javascript where I studied for Multimedia BA degree. I started project 2, I found it was extremely difficult all over again. My concept was before start developing the site and turn out I was not able to full completed which are get result, age group and time up game. I had spend to learning other resource a lot of time. I tried to understand the javascript but I was disppointed because I could not understand what they have explaining. Cause it was not my first English language. 
+I was nervous to do projects because I had experienced how difficult through javascript where I studied for Multimedia BA degree. I started project 2, I found it was extremely difficult all over again. My concept was before start developing the site and turn out I was not able to full completed which are get result, age group and time up game. I had spend to learning other resource a lot of time. I tried to understand the javascript.
 
 My mentor had good feedback and helps with my process improvement on site project. 
 
@@ -172,7 +172,7 @@ My mentor had good feedback and helps with my process improvement on site projec
 ## Adobe Photoshop & Illustrate
 
 * The logo images where I created the Photoshop. I downloaded the image comes from [www.vecteezy.com](https://www.vecteezy.com/vector-art/19115573-creative-business-card-and-logo-template-album-film-movie-reel-vector-illustration). It is free licence. I choose a roll movie image and edited to create a logo where I used Adobe Illustrate. 
-* The layout movie poster on the front page which comes from [www.wallpaperflare.com/](www.wallpaperflare.com/), It is free to allow download who wish to use wallpaper on the usernames' desktop, laptop, tablet or mobile.
+* The layout movie poster on the front page which comes from [https://www.wallpaperflare.com](https://www.wallpaperflare.com/), It is free to allow download who wish to use wallpaper on the usernames' desktop, laptop, tablet or mobile.
 * I downloaded three movie posters:
     - [Matrix](https://www.wallpaperflare.com/the-matrix-poster-movies-neo-keanu-reeves-morpheus-carrie-anne-moss-wallpaper-mjcss/download/1920x1200)
     - [Avengers](https://www.wallpaperflare.com/marvel-avengers-the-avengers-avengers-age-of-ultron-thor-wallpaper-zkw/download/1920x1200)
