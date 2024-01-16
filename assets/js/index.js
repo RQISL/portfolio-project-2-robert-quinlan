@@ -41,7 +41,6 @@ fetch(
           answerChoices.forEach((choice, index) => {
               formattedQuestion['choice' + (index + 1)] = choice;
           });
-          console.log(formattedQuestion)
           return formattedQuestion;
       });
      
@@ -75,8 +74,7 @@ getNewQuestion = () => {
   questionCounterText.innerText = `${questionCounter}/${MAX_QUESTIONS}`;
 
   const questionIndex = Math.floor(Math.random() * availableQuesions.length);
-  
-  console.log(Math.floor(Math.random() * availableQuesions.length), "this is array")
+ 
   currentQuestion = availableQuesions[questionIndex];
   question.innerText = currentQuestion.question;
   questImg.src = currentQuestion.image;
