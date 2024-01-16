@@ -6,12 +6,6 @@ body {
     margin: 0;
 }
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-
 /* Header logo and meun */
 
 #logo img {
@@ -314,8 +308,8 @@ h1{
   footer {
     background-color: #c6978b;
     width: 100%;
-    height: 120px;
-    padding: 30px;
+    height: 80px;
+    padding: 20px;
     bottom: 0;
     position: fixed;
 }
@@ -396,7 +390,7 @@ footer p {
     }
 }
 
-/* screen tablet devices  (800 x 768) */
+/* screen tablet devices  (800) */
 @media only screen and (max-width: 800px) {
 
     /* header menu */
@@ -408,7 +402,7 @@ footer p {
 
     /* footer bottom */
     footer {
-        height: 40px;
+        height: 60px;
     }
 
     footer p {
@@ -437,15 +431,6 @@ footer p {
 
     #headmeun ul {
         margin-top: -4.5%;
-    }
-
-    /* footer bottom */
-    footer {
-        height: 20px;
-    }
-
-    footer p {
-        font-size: 1em;
     }
 
     /* form */
@@ -480,15 +465,6 @@ footer p {
         font-size: 1.8em;
         padding: 10px;
         margin: 25% 0 -20%;
-    }
-
-    /* footer bottom */
-    footer {
-        height: 20px;
-    }
-
-    footer p {
-        font-size: 1em;
     }
 
     /* form */
@@ -537,8 +513,7 @@ footer p {
 
     /* footer bottom */
     footer {
-        height: 15px;
-        margin-left: -10%;
+        height: 25px;
     }
 
     footer p {
@@ -661,7 +636,6 @@ footer p {
     /* footer bottom */
     footer {
         height: 2px;
-        width: 100%;
     }
 
     footer p {
