@@ -60,30 +60,25 @@ Existing Features
 
 ### Home page
 * Display on the front image layout page
-* The image below the button to enter play game or there is either on top of the menu 'movie quiz'.
+* The image below the button to enter play or high scores or there is either on top of the menu 'movie quiz'.
 
-![]( assets/Image-for-ReadMe/frontPage.png)
-
-### Entry Username for the Movie Quiz page
-
-* Either click to Play Game button or Movie Quiz on the menu page,
-* Then first fill in the username, if you don't fill in the name and it won't enter the game until you fill in the username then it will be able to enter the quiz. See the picture below:
-
-![](assets/Image-for-ReadMe/FilledUsername.png)
-
-* when you enter username and click button _**`Let Play Movie Quiz`**_   then go to the Movie Quiz page as you can see the underline red highlight of the username. 
-* On the top display "Welcome _**`username`**_   to Movie Quiz, it will display your name when you fill in the username. See the picture below: 
-
-![]( assets/Image-for-ReadMe/DisplayUsername.png)
+![]( assets/Image-for-ReadMe/front_page_button.png)
 
 ### Select the answer to the question on the movie quiz page
 
 * To roll up the demand for the screen
-* There is a button _**`Next`**_   to the next up to 4 questions
-* There is a roll hover highlight background colour
-* When you click on the answer and it will display a red or green highlight which is either right or wrong the answers and at the top end of the quiz, it is pop an up screen to ask if would you like to play again, there is either yes or no, if yes back to movie quiz and go back to home page. See three pictures
+* When you click to an answer to the next up to 5 questions it will auto next question
+* When you click on the answer and it will display a red or green highlight which is either right or wrong the answers and at the end of the quiz, it is pop an up screen to ask to fill user name of the high score, there is either three button "Save", "Play again", and "Go Home". See three pictures
 
-![](assets/Image-for-ReadMe/Moviequiz1.png) ![]( assets/Image-for-ReadMe/CorrctAnswers.png) ![](assets/Image-for-ReadMe/incorrectAnswer.png) ![](assets/Image-for-ReadMe/GameOver.png)
+![](assets/Image-for-ReadMe/correct_answer.png) ![]( assets/Image-for-ReadMe/incorrect_answer.png) ![](assets/Image-for-ReadMe/incorrectAnswer.png) ![](assets/Image-for-ReadMe/game_over_fill_name.png)
+
+### Display High Score username list page
+
+* When the username filled in high score and click to save.
+* Turn out page display username list.
+* There is button "Go Home"
+
+![](assets/Image-for-ReadMe/high_socore_page.png)
 
 ### Contact page
 
