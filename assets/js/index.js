@@ -1,16 +1,14 @@
 const question = document.getElementById("question");
-const questImg = document.querySelector(".images > img")
+const questImg = document.querySelector(".images > img");
 const choices = Array.from(document.getElementsByClassName("choice-text"));
 const questionCounterText = document.getElementById("questionCounter");
 const scoreText = document.getElementById("score");
 
 let currentQuestion = {};
-let currentImg = 0;
 let acceptingAnswers = false;
 let score = 0;
 let questionCounter = 0;
 let availableQuesions = [];
-let imgIndex = [];
 
 
 // movie game javascript
@@ -80,7 +78,7 @@ getNewQuestion = () => {
   questImg.src = currentQuestion.image;
  
   choices.forEach(choice => {
-    const number = choice.dataset["number"];
+    const number = choice.dataset.number;
     choice.innerText = currentQuestion["choice" + number];
   });
 
@@ -94,7 +92,7 @@ choices.forEach(choice => {
 
     acceptingAnswers = false;
     const selectedChoice = e.target;
-    const selectedAnswer = selectedChoice.dataset["number"];
+    const selectedAnswer = selectedChoice.dataset.number;
 
     const classToApply =
       selectedAnswer == currentQuestion.answer ? "correct" : "incorrect";

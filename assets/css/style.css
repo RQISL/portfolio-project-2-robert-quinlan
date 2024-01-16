@@ -129,18 +129,21 @@ h1{
       display: flex;
       margin-bottom: 0.5rem;
       width: 100%;
-      font-size: 1.4rem;
+      height: 5rem;
+      font-size: 1.5rem;
       background-color: #c6978b;
     }
     
     .choice-prefix {
-      padding: 1.5rem 2.5rem;
+      padding: 1rem 1.5rem;
+      margin: 0;
+      font-size: 2rem;
       background-color: #2d2830;
       color: #c6978b;
     }
   
     .choice-text {
-      padding: 1.5rem;
+      padding-left: 1rem;
       cursor: pointer;
       
     }
