@@ -1,8 +1,3 @@
-
--------------------------------------------------------------------------------------------------------
-### Please note: I am the first language is ISL (Irish Sign Language). I write in the second English language. I hope you read and understand the ReadMe.
--------------------------------------------------------------------------------------------------------
-
 ## Concept Project
 
 * The concept project for the movies quiz. The design function is very basically in javascript.
