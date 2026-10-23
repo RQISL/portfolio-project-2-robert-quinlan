@@ -1,189 +1,215 @@
-## Concept Project
-
 # Movie Quiz
 
-* Movie Quiz is an educational website built with HTML, CSS and JavaScript. Users answer five randomly selected movie questions, receive feedback on their answers and save their scores in their browser.
+Movie Quiz is an educational website built with HTML, CSS and JavaScript. Users answer five randomly selected movie questions, receive feedback on their answers and save their scores in their browser.
 
-* I developed this project to practise JavaScript, including responding to user actions, loading JSON data, updating page content and using local storage.
+I developed this project to practise JavaScript, including responding to user actions, loading JSON data, updating page content and using local storage.
 
-* I planned the movie quiz through a mind map, sketches and wireframes for desktop and mobile layouts.
+[View the live project](https://rqisl.github.io/portfolio-project-2-robert-quinlan/)
 
-- The projects are as follows:
+## Technologies Used
 
-## Brainstorm 
-* Design mind map for the functions:
+- **HTML:** page structure, navigation and forms.
+- **CSS:** styling and responsive layouts.
+- **JavaScript:** question loading, answer handling, scoring and page updates.
+- **JSON:** storage of the quiz questions and answers.
+- **Browser localStorage:** storage of the most recent score and the top five saved scores.
+- **GitHub Pages:** website hosting.
+- **Adobe Photoshop and Illustrator:** logo and image preparation.
 
-![](assets/Image-for-ReadMe/MindMap.png)
+## Concept and Planning
 
- # Quick Sketch UX
- * ## Desktop & Mobile
+I planned the movie quiz through a mind map, sketches and wireframes for desktop and mobile layouts.
 
-![](assets/Image-for-ReadMe/SketchDesktopandMobile.png)
+### Brainstorm
 
-# Wireframe 
-* # Design wireframe UX for Desktop & Mobile
+I created a mind map to plan the quiz functions.
 
-* ## Desktop
-![](assets/Image-for-ReadMe/WireframeDesktop.png)
+![Mind map of the quiz functions](assets/Image-for-ReadMe/MindMap.png)
 
-* ## Mobile
-![](assets/Image-for-ReadMe/WireframeMobile.png)
+### Initial Sketches
 
-## Colour Palette
+I sketched the desktop and mobile layouts before creating wireframes.
 
-* I chose the colour palette that caught my eye. I searched for a website, found one, and chose the [colour palette](https://www.letseatcake.com/color-palettes-from-films/), and I took a screenshot, as seen attached here:
+![Desktop and mobile layout sketches](assets/Image-for-ReadMe/SketchDesktopandMobile.png)
 
-![](assets/Image-for-ReadMe/ColourPallet.png)
+### Wireframes
 
-* ## I chose some of the colours; see picture below:
-![](assets/Image-for-ReadMe/ChooseColor.png)
+#### Desktop
 
--------------------------------------------------------------------------------------------------------
-# Design and development of the movie quiz for desktop & mobile devices
+![Desktop wireframe](assets/Image-for-ReadMe/WireframeDesktop.png)
 
-## Logo: Movies Quiz
+#### Mobile
 
-![CI logo](assets/Image-for-ReadMe/MovieQuizLogo.png)
+![Mobile wireframe](assets/Image-for-ReadMe/WireframeMobile.png)
 
-Features
--------------
-* The site is a Movie Quiz. It targets users interested in movies who want to challenge their knowledge by following directors, actors, writers, editors, and more.
-![](assets/Image-for-ReadMe/Project_2_mockup_responsive_screen.png)
+### Colour Palette
 
+I researched [colour palettes inspired by films](https://www.letseatcake.com/color-palettes-from-films/) and selected colours for the website.
 
-Existing Features
------------------------
-### Navigation Bar
+![Colour palette inspiration](assets/Image-for-ReadMe/ColourPallet.png)
 
-* The header menu has three pages: Home, Movie Quiz and Contact.
+![Selected colours](assets/Image-for-ReadMe/ChooseColor.png)
 
-![](assets/Image-for-ReadMe/MenuDesktop.png)
+## Design and Features
 
-### Home page
-* Display on the front image layout page
-* The image below the button to enter play or high scores, or it is on top of the menu 'Movie Quiz '.
+The quiz is intended for people who enjoy movies and want to test their knowledge of directors, actors, screenwriters, editors and other film topics.
 
-![]( assets/Image-for-ReadMe/front_page_button.png)
+### Logo
 
-### Select the answer to the question on the movie quiz page
+![Movie Quiz logo](assets/Image-for-ReadMe/MovieQuizLogo.png)
 
-* To roll up the demand for the screen
-* When you click on an answer, the next up to 5 questions will auto-advance to the next question
-* When you click on the answer, it will display a red or green highlight indicating whether the answer is right or wrong. At the end of the quiz, it pops up a screen to ask the user to enter a username for the high score; there are three buttons: "Save", "Play again", and "Go Home". See three pictures
+### Desktop and Mobile Layouts
 
-![](assets/Image-for-ReadMe/correct_answer.png) ![]( assets/Image-for-ReadMe/incorrect_answer.png) ![](assets/Image-for-ReadMe/incorrectAnswer.png) ![](assets/Image-for-ReadMe/game_over_fill_name.png)
+![Movie Quiz displayed on different devices](assets/Image-for-ReadMe/Project_2_mockup_responsive_screen.png)
 
-### Display High Score username list page
+### Navigation
 
-* After completing the quiz, users can enter a name and save their score.
-* The high-score page displays the top five saved scores.
-* Scores are saved in the same browser using localStorage. They are not shared between devices. Clearing the browser’s site data removes them.
+The header links to Home, Movie Quiz and Contact.
 
-![](assets/Image-for-ReadMe/high_socore_page.png)
+![Desktop navigation menu](assets/Image-for-ReadMe/MenuDesktop.png)
 
-### Contact page
+### Home Page
 
-* Send a request to users who wish to have any comments.  See the picture, which is a responsive screen, as shown below:
+The home page displays a movie-poster composition and buttons to start the quiz or view high scores.
 
-![]( assets/Image-for-ReadMe/ContactPage.png)
+![Home page with Play and High Scores buttons](assets/Image-for-ReadMe/front_page_button.png)
 
-### Footer 
-* Keep a simple display, as the website is designed by me.
+### Quiz Questions and Answer Feedback
 
-![]( assets/Image-for-ReadMe/Footer.png)
+- The quiz loads its questions from a JSON file.
+- Each session selects five questions at random and randomises the position of the correct answer.
+- Selecting an answer highlights it in green for a correct answer or red for an incorrect answer.
+- A correct answer adds ten points to the score.
+- After a short delay, the quiz advances to the next question.
+- At the end, the user can enter a name, save the score, play again or return home.
 
-### Testing
-* The testing runs for Chrome, Opera, Microsoft Edge and Firefox, and it supports them. All the screens are fine and responsive, but they look slightly different on screens with different aspect ratios. 
+![Correct answer highlighted](assets/Image-for-ReadMe/correct_answer.png)
 
+![Incorrect answer highlighted](assets/Image-for-ReadMe/incorrect_answer.png)
 
-### The Lighthouse runs testing and results.
-* There was quite low performance in Lighthouse. I added alt text to each image and meta keywords. It improved the results, as seen in the picture below:
-* ## Home page
-![]( assets/Image-for-ReadMe/HomePageResult.png)
+![End-of-game page with username entry](assets/Image-for-ReadMe/game_over_fill_name.png)
 
-* ## Movie Quiz page
-![]( assets/Image-for-ReadMe/MovieQuizPageResult.png)
+### High Scores
 
-* ## Contact page
-![]( assets/Image-for-ReadMe/ContactPageResult.png)
+After completing the quiz, users can enter a name and save their score. The high-score page displays the top five saved scores.
 
-## Validation testing
+Scores are stored using the browser's localStorage. They are available in the same browser and are not shared between users or devices. Clearing the browser's site data removes the saved scores.
+
+![High-score list](assets/Image-for-ReadMe/high_socore_page.png)
+
+### Contact Page
+
+The project includes a contact-page layout for visitors to enter comments. The screenshot shows the page design; it does not establish whether messages are delivered.
+
+![Contact-page layout](assets/Image-for-ReadMe/ContactPage.png)
+
+### Footer
+
+The footer credits me as the website designer.
+
+![Website footer](assets/Image-for-ReadMe/Footer.png)
+
+## Testing and Validation
+
+The following records describe testing carried out during the original project. They are not a new assessment of the current live website.
+
+### Browser and Responsive Checks
+
+I checked the website in Chrome, Opera, Microsoft Edge and Firefox and reviewed the layouts at different screen sizes. I noted small differences in appearance between screen sizes and browsers.
+
+### Lighthouse
+
+I used Lighthouse to review the pages and recorded the results below. During development, I also added image alternative text and page metadata. The screenshots record the original results; they do not demonstrate that a particular change caused a performance improvement.
+
+#### Home Page
+
+![Original Home page Lighthouse results](assets/Image-for-ReadMe/HomePageResult.png)
+
+#### Movie Quiz Page
+
+![Original Movie Quiz page Lighthouse results](assets/Image-for-ReadMe/MovieQuizPageResult.png)
+
+#### Contact Page
+
+![Original Contact page Lighthouse results](assets/Image-for-ReadMe/ContactPageResult.png)
 
 ### HTML
-* A few errors were found when the test was run through the official W3C validator.
-- There was an error: the tag `<h3>` was not used; it was replaced with ` <div>`. I fixed the bug, and it passed with no errors.
+
+I used the [W3C HTML Validator](https://validator.w3.org/) to identify markup errors and corrected the issues recorded during development.
 
 ### CSS
-- The official (Jigsaw) validator. It passed with no errors.
+
+I checked the stylesheet using the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) and recorded no remaining validation errors at that stage.
 
 ### JavaScript
-* The test ran at [Javascript testing](https://jshint.com/)  and there were 24 warnings. I fixed the bugs and reduced the warnings; there were no errors.
 
-# Deployment
+I used [JSHint](https://jshint.com/) to identify warnings in the JavaScript and worked through the reported issues. Lint checks review code quality; they do not replace testing the quiz interactions in a browser.
 
-The GitHub page where it is deployed. How to access the deployed site is as follows:
+## Deployment
 
-* Use the files on the GitHub page and choose one of the files where it is in the “portfolio-project-1-robert-quinlan” file
-* Click on setting 
-* On the left side, follow the list of options
-* To click on ‘page’
-* The source under the option “Deploy from a Branch”
-* The Branch under " Deploy from a Branch " is set to main and root; then click Save. 
-* It ran the deployment process successfully.
+The website was deployed using GitHub Pages:
 
-The site lives at [Movie Quiz](https://rqisl.github.io/portfolio-project-2-robert-quinlan/)
+1. Open the `portfolio-project-2-robert-quinlan` repository on GitHub.
+2. Select **Settings**, then **Pages**.
+3. Under **Build and deployment**, select **Deploy from a branch**.
+4. Select the `main` branch and the `/ (root)` folder.
+5. Select **Save** and wait for deployment to complete.
+6. Open the published site using the link shown by GitHub Pages.
 
-## Credits
+Live project: [Movie Quiz](https://rqisl.github.io/portfolio-project-2-robert-quinlan/).
+
+## Learning, Credits and Limitations
 
 JavaScript was challenging for me during this project. I used course materials, tutorials and mentor feedback to improve my understanding of question handling, answer feedback and score storage.
-Some planned features, including age groups and a countdown timer, were not implemented. The resources I used are credited below.
 
-My mentor gave good feedback and helped me improve my process on the site project. 
+I adapted examples from the resources credited below. My mentor provided feedback that helped me improve the project and my development process.
 
-## Resouce & tutorial
-* ### I learned as many resources as possible I could learn.
+Some planned features, including age groups and a countdown timer, were not implemented. High scores are stored locally in the browser rather than in a shared database.
 
-1) [Ridpidapi video for API to get images of the poster](https://www.youtube.com/watch?v=ytNyibPQFhw) 
-1) [Pick one of the images: how to use](https://makersaid.com/array-of-images-in-javascript/)
-1) [Hidden Click](https://www.w3schools.com/css/tryit.asp?filename=trycss_display) 
-1) How can I structure the quiz concept?
+## Resources and Tutorials
+I consulted the following course materials and tutorials while developing the project.
+
+1) [RapidAPI tutorial: retrieving poster images](https://www.youtube.com/watch?v=ytNyibPQFhw) 
+1) [Working with arrays of images in JavaScript](https://makersaid.com/array-of-images-in-javascript/)
+1) [CSS display and hiding elements](https://www.w3schools.com/css/tryit.asp?filename=trycss_display) 
+1) Structuring a JavaScript quiz
     - [Example quiz 1](https://simplestepscode.com/javascript-quiz-tutorial/)
     - [Example quiz 2](https://www.youtube.com/watch?v=f4fB9Xg2JEY) 
 1) [Output result](https://codepen.io/yaphi1/pen/NpZvJp)
-1) [How can  I do the question on the next slide](https://www.youtube.com/watch?v=uAAD3mmQGRQ)
-1) [Array through to Code Institute resource](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LMR101+2021_T1/courseware/0a4bf408d10c4149bb686457ac11edf6/9ad9ed6044aa49c0ae12507f3c03aa79/)
-1) [Enter username on the screen through Code Institute](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LMR101+2021_T1/courseware/0a4bf408d10c4149bb686457ac11edf6/16d62f1111064f5cb6a64582da96a41b/?child=last.)
+1) [Moving between quiz questions](https://www.youtube.com/watch?v=uAAD3mmQGRQ)
+1) [JavaScript arrays — Code Institute](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LMR101+2021_T1/courseware/0a4bf408d10c4149bb686457ac11edf6/9ad9ed6044aa49c0ae12507f3c03aa79/)
+1) [Username input — Code Institute](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LMR101+2021_T1/courseware/0a4bf408d10c4149bb686457ac11edf6/16d62f1111064f5cb6a64582da96a41b/?child=last.)
     - [Example 1](https://youtu.be/Iw6fyph6MNw)
     - [Example 2](https://youtu.be/KB6Yg5hNrqc)
     - [Example 3](https://www.youtube.com/watch?v=aEj0Wu33hJM) 
-1) Click highlight
+1) Highlighting selected answers
     - [Example 1](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LMR101+2021_T1/courseware/0a4bf408d10c4149bb686457ac11edf6/fe180c06af614d2f86e32957ae17a859/?child=last) 
     - [Example 2](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LMR101+2021_T1/courseware/0a4bf408d10c4149bb686457ac11edf6/fe180c06af614d2f86e32957ae17a859/?child=last)
     - [Example 3](https://stackoverflow.com/questions/39852228/style-backgroundcolor-doesnt-work)
-1) Click highlight remove and active 
+1) Adding and removing active styles 
     - [Example 1](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LMR101+2021_T1/courseware/0a4bf408d10c4149bb686457ac11edf6/37e3becd93804fdf8bf586523f56ead5/5?activate_block_id=block-v1%3ACodeInstitute%2BLMR101%2B2021_T1%2Btype%40html%2Bblock%404b2504c0ab4e40d6b42d4b527776707a)
     - [Example 2](https://softauthor.com/make-selected-clicked-button-active-in-javascript/)
 1) [Output HTML in JavaScript](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LMR101+2021_T1/courseware/0a4bf408d10c4149bb686457ac11edf6/37e3becd93804fdf8bf586523f56ead5/) 
-1) [Overlay 3 W School](https://www.w3schools.com/howto/howto_css_overlay.asp)
-1) For loop
+1) [CSS overlays — W3Schools](https://www.w3schools.com/howto/howto_css_overlay.asp)
+1) Loops and array iteration
     - [Example 1](https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_onclick)
     - [Example 2](https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_foreach)
     - [Example 3](https://www.freecodecamp.org/news/javascript-foreach-js-array-for-each-example/amp/)
-    - [Example 3](https://www.freecodecamp.org/news/javascript-foreach-js-array-for-each-example/amp/)
 
-## Adobe Photoshop & Illustrate
+## Image and Design Credits
 
-* The logo images I created in Photoshop. I downloaded the image from [www.vecteezy.com](https://www.vecteezy.com/vector-art/19115573-creative-business-card-and-logo-template-album-film-movie-reel-vector-illustration) under a free license. I chose a roll movie image and edited it in Adobe Illustrator to create a logo. 
-* The movie poster layout on the front page comes from [https://www.wallpaperflare.com](https://www.wallpaperflare.com/). It is free to download for those who wish to use the wallpaper on their desktop, laptop, tablet or mobile.
-* I downloaded three movie posters:
-    - [Matrix](https://www.wallpaperflare.com/the-matrix-poster-movies-neo-keanu-reeves-morpheus-carrie-anne-moss-wallpaper-mjcss/download/1920x1200)
-    - [Avengers](https://www.wallpaperflare.com/marvel-avengers-the-avengers-avengers-age-of-ultron-thor-wallpaper-zkw/download/1920x1200)
-    - [Spiderman](https://www.wallpaperflare.com/spider-man-movies-spider-man-3-marvel-comics-black-suited-spiderman-wallpaper-pnkas/download/1920x1200)
-* I made an overlapping layout of the movie posters where I used Adobe Photoshop 
+I adapted a film-reel graphic from [Vecteezy](https://www.vecteezy.com/vector-art/19115573-creative-business-card-and-logo-template-album-film-movie-reel-vector-illustration) to create the logo using Adobe Illustrator and Photoshop.
 
-## Concluded 
+I downloaded the following movie-poster images from Wallpaperflare and arranged them into an overlapping composition in Photoshop:
+
+- [The Matrix](https://www.wallpaperflare.com/the-matrix-poster-movies-neo-keanu-reeves-morpheus-carrie-anne-moss-wallpaper-mjcss/download/1920x1200)
+- [Avengers](https://www.wallpaperflare.com/marvel-avengers-the-avengers-avengers-age-of-ultron-thor-wallpaper-zkw/download/1920x1200)
+- [Spider-Man](https://www.wallpaperflare.com/spider-man-movies-spider-man-3-marvel-comics-black-suited-spiderman-wallpaper-pnkas/download/1920x1200)
+
+These links identify the original sources. The images remain subject to their respective owners' rights and source terms.
 
 ## What I Learned
 
-* This project helped me practise loading questions from JSON, handling click events, updating page content, calculating scores and saving data in localStorage. I also gained experience translating wireframes into a website and investigating coding problems.
+This project helped me practise loading questions from JSON, handling click events, updating page content, calculating scores and saving data in localStorage. I also gained experience translating wireframes into a website and investigating coding problems.
+
 View the live project: [Movie Quiz](https://rqisl.github.io/portfolio-project-2-robert-quinlan/).
